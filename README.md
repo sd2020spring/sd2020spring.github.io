@@ -1,5 +1,5 @@
-# Spring 2018 SoftDes Web Site
-[![Build Status](https://travis-ci.org/sd1spring/softdes.web.svg?branch=master)](https://travis-ci.org/sd18spring/softdes.web)
+# Fall 2018 SoftDes Web Site
+[![Build Status](https://travis-ci.org/sd18fall/sd18fall.github.io.svg?branch=master)](https://travis-ci.org/sd18fall/sd18fall.github.io)
 
 Course site for Fall 2018 Software Design @ Olin College.
 

@@ -1,6 +1,6 @@
 ---
 title: Assignment 1
-due: 2018-01-26 13:30:00 -04:00
+due: 2018-09-06 09:00:00 -05:00
 ---
 
 
@@ -18,16 +18,14 @@ Note the times you start and stop reading (please do this for all the readings).
 
 ## Do
 * Make sure to finish up any activities that you didn't get to from the [Day 1 materials](/notes/day-1).
-* Complete the [course entrance survey](https://goo.gl/forms/5AEwQVWbFzQSHWB43) before class on Friday. This counts towards your participation grade.
+* Complete the [course entrance survey](https://goo.gl/forms/GopqnLvczWUEx33y1) before class on Thursday. This counts towards your participation grade.
 * Complete Reading Journal 1. Follow [these instructions]({{site.baseurl}}{% link pages/reading-journal.md %}) to submit it.
-* Use [this link](https://join.slack.com/t/softdes/signup?x=x-303627938934-302893055029) to join the <http://softdes.slack.com> Slack team.
-* Send a message to the `#general` channel of the [Slack](http://sd17fall.slack.com) team. This counts towards your participation grade. You can do any of the following:
-  * Ask a question.
-  * Answer a question that someone has asked.
-  * Post a computing-related link or news item.
-  * Say "Hi" or "Present".
 
 ## Optional (fun) reading
 
 * [xkcd #353](https://xkcd.com/353/), and [xkcd #353 explained](https://www.explainxkcd.com/wiki/index.php/353:_Python)
+
+{::comment}
+Removed:
 * [“In the beginning was the command line”](http://www.mit.edu/~yandros/doc/command.txt), Neal Stephenson
+{:/comment}
