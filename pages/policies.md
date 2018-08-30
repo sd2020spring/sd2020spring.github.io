@@ -12,9 +12,11 @@ If you have a documented disability (or think you may have a disability) and, as
  The DSO serves as a clearinghouse on disability issues and works in partnership with faculty and all other student service offices.
  For further information about services for students with disabilities, please contact the DSO.
 
+<!--
 ## Course Communications
 
 We will use Slack as our communications channel for this class. You responsible for course announcements that are posted to Slack. (By default, Slack will forward announcements to the email address that you use for your Slack account, if you are not running the Slack client.)
+-->
 
 ## Course Components
 
@@ -45,7 +47,7 @@ Reading journals are primarily developmental, so they are not evaluated based on
 | 1     | submitted with serious deficiencies, exercises not attempted or very minimal effort |
 | 0     | not submitted                            |
 
-You are not expected to spend more than eight hours per week outside of class on all classwork – reading, reading journals, mini-projects, toolboxes, final project. With the exception of the first assignment, you should not spend more time than five hours on a reading journal. You should not spend more than ninety minutes on an assignment without asking an instructor, via Slack or by making use of office hours, for help. (Ask for help sooner if you are “stuck”. Banging your head against a wall is not a good use of your time.)
+You are not expected to spend more than eight hours per week outside of class on all classwork – reading, reading journals, mini-projects, toolboxes, final project. With the exception of the first assignment, you should not spend more time than five hours on a reading journal. You should not spend more than ninety minutes on an assignment without asking an instructor, electronically or by making use of office hours, for help. (Ask for help sooner if you are “stuck”. Banging your head against a wall is not a good use of your time.)
 
 Reading journals must be submitted by pushing to GitHub before 9am on the day of the class in which they are due to be considered for credit. We will review work from journals in class on that day, so it is not practical to get behind. You are allowed one "free pass" missed submission with no questions asked.
 
@@ -87,7 +89,7 @@ Some things you can do to help:
 1. Come to class on time! We will do our best to use class time effectively. Late arrivals are disruptive.
 2. Come to class prepared. Make sure you have always completed your reading journal.
 3. Try not to fall behind. If we are all working on the same stuff at the same time, everything works better.
-4. Be active on Slack discussions, both asking and answering questions.
+4. Be active in discussions in class and online, both asking and answering questions.
 5. Take care of your brain. Eat well, sleep well, get some exercises. Come to class ready to work.
 6. Be professional.
 7. Be respectful.

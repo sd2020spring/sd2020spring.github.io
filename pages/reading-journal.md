@@ -32,8 +32,8 @@ On your laptop, you should have a cloned copy of the ReadingJournal repository f
 $ cd ReadingJournal
 $ git remote -v
 
-origin	git@github.com://{{ site.data.github.organization }}/ReadingJournal-myname.git (fetch)
-origin	git@github.com://{{ site.data.github.organization }}/ReadingJournal-myname.git (push)
+origin	https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname.git (fetch)
+origin	https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname.git (push)
 ```
 
 (Depending on how you set up your reading journal, you may see `https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname.git` instead of `git@github.com://{{ site.data.github.organization }}/ReadingJournal-myname.git`. Either is acceptable.)
@@ -67,7 +67,7 @@ Here’s how you can check your that you've submitted your Reading Journal:
 
 * In a terminal in the `ReadingJournal` directory, type `git remote -v`. This reports the URL of your repository; for example: `https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname`.
 
-* Open `https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname` in a browser. Now there’s several places you can verify that you’ve uploaded your work:
+* Open `https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname` in a browser. Now there are several places you can verify that you’ve uploaded your work:
   * Right above the list of files, it says “{your name} Completed reading journal 1” and “Latest commit f080636 7 hours ago”
   * Next to `reading-journal-1.ipynb`, it says “7 hours ago”.
   * Click on `reading-journal-1.ipynb`, and you will see a (non-interactive) display of the notebook itself. This is verifies both that `git push` works, and that the file you pushed has the content you intended.
