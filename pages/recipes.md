@@ -227,3 +227,12 @@ $ git merge origin/master
 
 If you have any conflicts, deal with them, commit and push your changes, and
 you're good to go!
+
+### Download a single file directly from GitHub
+
+99% of the time you will be using Git as intended (as described above) and working on files in a repository you've cloned to your local machine. However, on rare occasions it is useful to grab a single file from GitHub, without cloning the repo it is part of.
+
+To accomplish this, navigate to the file you want on the GitHub web interface, click "Raw", then use "Save as..." in your browser (being sure to select "All files" as the file type so the browser doesn't unhelpfully insert a ".txt" extension).
+
+![]({% link images/setup/GitHub_download.gif %})
+
