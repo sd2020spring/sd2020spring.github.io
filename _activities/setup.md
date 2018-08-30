@@ -134,6 +134,8 @@ Now that you have the basic idea of what version control is and what it is good 
 
 ### Get the Reading Journal
 
+> **Note:** GitHub Classroom is not yet active for this class, so for the first day follow the instructions on [Assignment 1](/assignments/assignment-1) instead of what's below. We will switch back to this method once the Classroom is active.
+
 We will be using GitHub for a number of use cases in the class.
 
 * Turning in pre-class reading exercises

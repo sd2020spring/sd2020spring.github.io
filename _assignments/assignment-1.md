@@ -17,9 +17,13 @@ Note the times you start and stop reading (please do this for all the readings).
 * Think Python [chapter 5](http://greenteapress.com/thinkpython2/html/thinkpython2006.html): sections 5.2-5.7 and section 5.11.
 
 ## Do
-* Make sure to finish up any activities that you didn't get to from the [Day 1 materials](/notes/day-1).
+* Make sure to finish up any activities that you didn't get to from the [Day 1 materials](/notes/day-1), including [setting up your environment](/activities/setup).
 * Complete the [course entrance survey](https://goo.gl/forms/GopqnLvczWUEx33y1) before class on Thursday. This counts towards your participation grade.
-* Complete Reading Journal 1. Follow [these instructions]({{site.baseurl}}{% link pages/reading-journal.md %}) to submit it.
+* Complete Reading Journal 1. 
+> **Note:** Although GitHub Classroom is not yet active for this class, you can get started right away by [manually downloading Reading Journal 1 directly from GitHub](/resources/recipes/#download-a-single-file-directly-from-github). We will update the submission instructions once the Classroom is live.
+<!--
+Follow [these instructions]({{site.baseurl}}{% link pages/reading-journal.md %}) to submit it.
+-->
 
 ## Optional (fun) reading
 
