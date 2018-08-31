@@ -64,7 +64,6 @@ _Example 1:_ All mini-projects are on time except mini-project 1 which was 2 day
 
 _Example 2:_ All mini-projects are on time except mini-project 4 which is 10 days late. You will receive a 0% for mini-project 4. You do not benefit from late penalty forgiveness.
 
-Every file you turn in must have a top-level comment identifying you as the author and listing anyone who made a substantial contribution. This comment is your assertion that the mini-project represents your own work.
 
 ### Project Toolbox
 
