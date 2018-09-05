@@ -134,7 +134,9 @@ Now that you have the basic idea of what version control is and what it is good 
 
 ### Get the Reading Journal
 
+<!--
 > **Note:** GitHub Classroom is not yet active for this class, so for the first day follow the instructions on [Assignment 1](/assignments/assignment-1) instead of what's below. We will switch back to this method once the Classroom is active.
+-->
 
 We will be using GitHub for a number of use cases in the class.
 
@@ -147,7 +149,7 @@ Since there’s reading due next class, you will need to perform the steps below
 1. Click on the invitation link <{{ site.data.github.reading_journal_invite }}>
 2. Click the green button “Accept this assignment”.
 3. Follow the remaining instructions until you get to your repository page. It will looks something like <https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname>, except with your GitHub user id instead of `myname`.
-4. Clone the repository to your computer by typing the following into your terminal program. Replace `myname` with your GitHub user id.
+4. Clone the repository to your computer by typing the following into your Terminal program. Replace `myname` with your GitHub user id.
 
 ```bash
 $ git clone https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname.git ReadingJournal

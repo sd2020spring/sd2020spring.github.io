@@ -20,10 +20,11 @@ Note the times you start and stop reading (please do this for all the readings).
 * Make sure to finish up any activities that you didn't get to from the [Day 1 materials](/notes/day-1), including [setting up your environment](/activities/setup).
 * Complete the [course entrance survey](https://goo.gl/forms/GopqnLvczWUEx33y1) before class on Thursday. This counts towards your participation grade.
 * Complete Reading Journal 1. 
-> **Note:** Although GitHub Classroom is not yet active for this class, you can get started right away by [manually downloading Reading Journal 1 directly from GitHub](/resources/recipes/#download-a-single-file-directly-from-github). We will update the submission instructions once the Classroom is live.
-<!--
-Follow [these instructions]({{site.baseurl}}{% link pages/reading-journal.md %}) to submit it.
--->
+  1. Get the Reading Journal for the first time by following the [setup instructions](/activities/setup#get-the-reading-journal)
+  1. Complete Reading Journal 1 and save the Jupyter notebook (```reading-journal-01.ipynb```)
+  1. Submit the Reading Journal by following [these instructions]({{site.baseurl}}{% link pages/reading-journal.md %})
+
+> **Note:** Because GitHub Classroom was not initially active for this class, it's also OK if you completed the Reading Journal by [manually downloading Reading Journal 1 directly from GitHub](/resources/recipes/#download-a-single-file-directly-from-github). We will get everyone set up with the GitHub method on Thursday.
 
 ## Optional (fun) reading
 
