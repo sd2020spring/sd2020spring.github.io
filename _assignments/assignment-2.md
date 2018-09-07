@@ -6,7 +6,7 @@ due: 2018-09-10 09:00:00 -05:00
 
 ## Read
 * Think Python [chapter 6.1-6.4](http://greenteapress.com/thinkpython2/html/thinkpython2007.html)
-* Think Python [chapter 7.1-7.4](http://greenteapress.com/thinkpython2/html/thinkpython2008.html)
+* Think Python [chapter 7.1-7.5](http://greenteapress.com/thinkpython2/html/thinkpython2008.html)
 
 
 ## Do
