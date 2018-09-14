@@ -244,9 +244,9 @@ documentation](http://flask.pocoo.org/docs/0.10/#user-s-guide) and the
 should be pretty helpful.
 
 1. _HTML Forms_ To make forms in HTML, check out [this resource](http://www.w3schools.com/html/html_forms.asp). For even more information, check [this](http://tinyurl.com/htmlforms) out.
-2. _Sending POST Requests_ To send the data from the form in a POST request, use an input with type `submit`, and set the action of the form to reflect the destination in your routes.
-3. _Handling POST Requests_ To learn more about handling post requests in Flask, check this resource from the [Flask documentation](http://flask.pocoo.org/docs/1.0/quickstart/#http-methods) out.
-4. \+ 5. _Accessing the Form Data_ To access the form data, check out [this documentation](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) on using the Flask `request` utility.
+2. _Sending Data From Your HTML Form_: You'll need to figure out how write HTML form ["actions"](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data) for Flask, HTML ["methods"](https://www.tutorialspoint.com/flask/flask_http_methods.htm) for Flask, as well as how to write a "submit" button type for HTML forms.
+3. _Handling POST Requests_: To learn more about handling post requests in Flask, check this resource from the [Flask documentation](http://flask.pocoo.org/docs/1.0/quickstart/#http-methods) out.
+4. \+ 5. _Accessing the Form Data_: To access the form data, check out [this documentation](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) on using the Flask `request` utility.
 
 ## What to turn in
 
