@@ -3,7 +3,7 @@ title: 'Mini Project 2: Computational Art'
 description: >
   In this assignment you will be exploring one particular means of using
   computers to generate images.
-due: 2018-09-27 10:50:00 -04:00
+due: 2018-10-01 10:50:00 -04:00
 gallery_due: 2018-09-30 17:00:00 -04:00
 ---
 
