@@ -39,17 +39,12 @@ There are also lots of opportunities to take things further – many of the topi
 
 ## Submitting exercises
 
-Submission instructions coming soon
-
-<!--
 Get the starter code for each Project Toolbox exercise by accepting the GitHub Classroom invite in the "Get Set" section of its instruction page above.
 Each Project Toolbox exercise has a description of the minimum required deliverable.
 
-
-To submit your assignment, push your code to GitHub and fill out the [Toolbox check-off survey]({{ site.data.github.TB_survey }}).
+To submit your assignment, push your code to GitHub and submit a link to your work (along with any notes) on Canvas.
 For several of the exercises, you may want to schedule a brief demo with a NINJA.
 
-You will complete at least 5 Toolbox exercises of your choice over the course of the semester. Due dates for each are listed on the [course calendar](/calendar/).
+You will complete at least 4 Toolbox exercises of your choice over the course of the semester. Due dates for each are listed on the [course calendar](/calendar/).
 
 If you complete your Project Toolbox exercises and you have a great idea for a new one you'd like to create, get in touch with the teaching team!
--->
