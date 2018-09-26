@@ -24,9 +24,9 @@ and the fittest survive to form the next generation.
 
 ### Flexible Muscle-Based Locomotion for Bipedal Creatures
 
-{% include youtubePlayer.html id=pgaEE27nsQw %}
+{% include youtubePlayer.html id="pgaEE27nsQw" %}
 
-{% include youtubePlayer.html id=hx_bgoTF7bs %}
+{% include youtubePlayer.html id="hx_bgoTF7bs" %}
 
 The gaits shown in these videos were not designed: they were evolved. The
 researchers provided an environment with constraints (physics) plus a "fitness
