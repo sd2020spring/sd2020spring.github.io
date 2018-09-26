@@ -71,7 +71,7 @@ The purpose of the Project Toolbox exercises is to introduce you to a range of s
 
 These exercises will be completed independently at your own pace, and you will be able to select from a range of options to match your interests. They will be assessed on a completion basis.
 
-You will complete at least five Project Toolbox exercises by the posted deadline. 
+You will complete at least four Project Toolbox exercises by the posted deadlines. 
 
 ### Final Project
 
