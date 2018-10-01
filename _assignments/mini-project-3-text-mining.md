@@ -26,7 +26,10 @@ that manipulates language in some interesting way).
 
 ## How to proceed
 
-In order to get started on the assignment, you should accept the assignment in Github classroom by clicking [this link]({{ site.data.github.textmining_invite }}).  Once you've accepted the assignment, clone the repository on your computer.
+This assignment may be completed individually or in teams of 2.
+In order to get started on the assignment, you should accept the assignment in Github classroom by clicking [this link]({{ site.data.github.textmining_invite }}).
+If you're working with a partner, one of you will accept the assignment for the team and then invite the other member to the repository once it is created.
+Once you've accepted the assignment, clone the repository on your computer.
 
 You should read this document in a somewhat non-linear/spiral fashion:
 
