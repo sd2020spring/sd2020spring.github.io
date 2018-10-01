@@ -541,8 +541,8 @@ In order to share what you discovered/created as part of your text mining projec
 Professionalism is important in public presentations, so please use the “would I be happy for my parents to read this in the newspaper” test when uploading content. Humor is great; abusive language or disparaging groups of people is firmly not acceptable.
 
 Here's some examples from previous semesters:
- * [Spring 2018 MP3 examples]({{ page.sd18_examples }})
- * [Spring 2017 MP3 examples]({{ page.sd17_examples }})
+ * [Spring 2018 MP3 examples]({{ page.sp18_examples }})
+ * [Spring 2017 MP3 examples]({{ page.sp17_examples }})
 
 <!-- ## Revision
 
