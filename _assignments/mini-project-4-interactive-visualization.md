@@ -4,7 +4,6 @@ description: >
   The big idea of this project will be to move from static programs (ones
   that are run, do some computations, and spit out a result) to interactive programs
   (ones that allow the user to perform actions that change the state of the program).
-announce: 2018-10-11 10:00:00 -04:00
 due: 2018-10-25 10:50:00 -04:00
 parts:
 - name: Getting Started
