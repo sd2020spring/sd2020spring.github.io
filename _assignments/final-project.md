@@ -29,7 +29,7 @@ parts:
   due: 2018-12-06 12:30:00 -04:00
   tag: project-website-final
 - name: Final Deliverables
-  due: 2018-05-08 12:00:00 -04:00
+  due: 2018-12-11 16:00:00 -04:00
   tag: demo-session-poster
 type: index
 team_registration_survey_part: 0
