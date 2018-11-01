@@ -52,12 +52,12 @@ sections:
 1. **Background and context** What information about your project does the audience need to participate fully in the technical review? You should share enough to make sure your audience understands the questions you are asking, but without going into unnecessary detail.
 2. **Key questions** What do you want to learn from the review? What are the most important decisions your team is currently contemplating? Where might an outside perspective be most helpful? As you select key questions to ask during the review, bear in mind both the time limitations and background of your audience.
 3. **Agenda for technical review session** Be specific about how you plan to use your allotted time. What strategies will you use to communicate with your audience?
-4. **Feedback form** Create a Google form that folks in the review will use to provide you with feedback or answers to various questions you pose to your audience.  Since, at least for the first review, the time you have to present will be very short you should expect most of the feedback you get to come from this form rather than thoughts expressed orally during your session.  Please [submit a link to your Google form](https://docs.google.com/forms/d/e/1FAIpQLSdDb4Q3wtGMyax6DCJGRD3zbzuo9uQNjGTNSEKS-97H9nIy_Q/viewform) using this other Google form!  (you must have this submitted no less than 2 hours before class so we have time to post a link on the course website).
+4. **Feedback form** Create a Google form that folks in the review will use to provide you with feedback or answers to various questions you pose to your audience.  Since, at least for the first review, the time you have to present will be relatively short you should expect much of the feedback you get to come from this form rather than thoughts expressed orally during your session. Please create a feedback form tailored for your architectural review and share the link no less than 2 hours before class.
 
 It is often useful to provide some background material to your audience before
 the review so they're not coming into the discussion "cold". You may (optionally) assign
 the peer teams in your group a reasonable amount of "homework" (~5-10 minutes
-of reading) by emailing them at least 24 hours before your technical review.
+of reading) by posting on the discussion forum at least 24 hours before your technical review.
 
 The Preparation and Framing document must be posted as
 [Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) to your team GitHub repository before the review takes
@@ -207,8 +207,3 @@ team GitHub repository before the next class after the review.
 **25%** | The document is very unclear and missing multiple key elements
 **0%** | You didn't turn in anything, or you clearly didn't put any effort into creating the document
 
-## Team groupings and schedule
-
-### Schedule
-
-Will be posted 1 week prior to presentations on the course page.
