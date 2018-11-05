@@ -17,19 +17,19 @@ parts:
   due: 2018-10-29 10:00:00 -04:00
   tag: project-proposal
 - name: AR Preparation Document
-  due: 2018-11-05 10:00:00 -04:00
+  due: 2018-11-05 10:00:00 -05:00
   tag: architectural-review
 - name: AR Reflection Document
-  due: 2018-11-08 10:00:00 -04:00
+  due: 2018-11-08 10:00:00 -05:00
   tag: architectural-review
 - name: Project Website MVP
-  due: 2018-11-29 17:00:00 -04:00
+  due: 2018-11-29 17:00:00 -05:00
   tag: project-website-mvp
 - name: Project Website, feedback addressed
-  due: 2018-12-06 12:30:00 -04:00
+  due: 2018-12-06 12:30:00 -05:00
   tag: project-website-final
 - name: Final Deliverables
-  due: 2018-12-11 16:00:00 -04:00
+  due: 2018-12-11 16:00:00 -05:00
   tag: demo-session-poster
 type: index
 team_registration_survey_part: 0
