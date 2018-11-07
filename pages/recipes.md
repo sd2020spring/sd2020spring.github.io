@@ -236,3 +236,13 @@ To accomplish this, navigate to the file you want on the GitHub web interface, c
 
 ![]({% link images/setup/GitHub_download.gif %})
 
+
+### Link to a section of code in GitHub
+ 1. Go to your project repository on GitHub.
+ 1. [Optional] If you want to link to code in a previous commit, click on "[N] commits" in the upper left to see your history. Find the commit representing the point in time you'd like to link to and click the "<> - Browse the repository at this point in the history" button on the right.
+ 1. Navigate to the file containing the code to link.
+ 1. Scroll down to the line number starting the section of code to link to and click the line number. You should see the line highlighted in yellow.
+ 1. Hold the shift key and click the line number for the end of the section of code to link to.
+ 1. In the ellipsis ("...") menu, select "Copy permalink". This should give you a URL ending with an HTML anchor (e.g. ```#L57-L63```) referring to the line numbers of the selected section.
+
+![]({% link images/setup/GitHub_link.gif %})
