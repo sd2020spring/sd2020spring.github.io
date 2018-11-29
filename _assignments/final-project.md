@@ -23,7 +23,7 @@ parts:
   due: 2018-11-08 10:00:00 -05:00
   tag: architectural-review
 - name: Project Website MVP
-  due: 2018-11-29 17:00:00 -05:00
+  due: 2018-11-30 17:00:00 -05:00
   tag: project-website-mvp
 - name: Project Website, feedback addressed
   due: 2018-12-06 12:30:00 -05:00
@@ -178,18 +178,17 @@ Give proper credit for external resources used.
 
 **_Note_**: These content prompts exist to inspire your thinking, and you should use whatever organization and sections make sense for your project and the story you're telling. Simply answering the given prompts sequentially is not the strongest way to communicate your work to an external audience. Think about what you've accomplished and frame it nicely - finish strong!
 
-Your final project website may be implemented using whatever platform you
-like. You can use [GitHub pages](https://pages.github.com/),
-possibly along with [Jekyll](http://jekyllrb.com/docs/github-pages/) (as we do for the course website), or you
-can switch to an easier option like [Google Sites](https://sites.google.com/).
-If you'd like to make a GitHub site with multiple pages using Markdown,
-former SoftDes NINJAs Patrick and Franton have written a [helpful
-guide](http://phuston.github.io/patrickandfrantonarethebestninjas/howto).
+Your final project website will be implemented using 
+[GitHub pages](https://pages.github.com/),
+possibly along with [Jekyll](http://jekyllrb.com/docs/github-pages/) (as we do for the course website).
+If you have a compelling reason you need to use a different platform, please discuss with course staff.
 
-Whatever implementation option you choose, you **must** include a link to your
-project website from your GitHub repository. Remember that this is part of
-your professional portfolio as you select a platform -- choose something that
-will still be around in the future!
+<!-- If you'd like to make a GitHub site with multiple pages using Markdown,
+former SoftDes NINJAs Patrick and Franton have written a [helpful
+guide](http://phuston.github.io/patrickandfrantonarethebestninjas/howto). -->
+
+You **must** include a link to your
+project website from your GitHub repository.
 
 **Submission mechanics**: Your project's GitHub repo page should link to your web site. This means either the README, or the Website that is optionally displayed in the upper right corner of your GitHub repo page, should contain this link.
 
