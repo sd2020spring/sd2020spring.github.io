@@ -192,42 +192,26 @@ project website from your GitHub repository.
 
 **Submission mechanics**: Your project's GitHub repo page should link to your web site. This means either the README, or the Website that is optionally displayed in the upper right corner of your GitHub repo page, should contain this link.
 
-### Demo Session Poster and Video
+### Demo Session Video
 
 {% assign part = page.parts[page.expo_part] %}
-_Printed before {{ part.due | date: '%-H:%M %p' }} on {{ part.due | date: '%A, %B %-d' }}_
+_Completed and shared before {{ part.due | date: '%-H:%M %p' }} on {{ part.due | date: '%A, %B %-d' }}_
 
-**The poster and video are worth 10% of the project grade.**
+**The project video is worth 10% of the project grade.**
 
-Each team will create a poster to accompany the final demonstration session.
-Your poster will contain similar information to your website, but reformatted
-and selectively edited for a different context:
+_Note: This deliverable originally also included a poster to accompany your final demo session. That requirement has been made optional._
 
-* **Poster** - large form factor, tool to support your demo (content need not stand alone without explanation)
-* **Website** - one-way communication, allows for more complete/in-depth coverage
-
-Posters are generally 24 x 36 inches.
-You may use a larger size if you want.
-You can print your poster in the Olin computer lab.
-
-Your poster should have the same sections as your website (but leave out installation instructions). It serves two purposes:
-* We will put these on the wall during the final event, to display our work to each other and to visitors
-* It is practice for a research poster, which is a standard format for presenting work at an academic conference, or in the halls of an academic institution. You may have seem posters during Olin EXPOs, or on some of the AC halls at other times. [Thinking and explaining clearly and laying out your work in this format is not bad practice for industry presentations too.]
-
-Examples and guides:
-* <https://guides.nyu.edu/posters>
-* <https://ugs.utexas.edu/our/poster/samples>
-* <https://nau.edu/undergraduate-research/poster-presentation-tips/>
-* <http://justinlmatthews.com/posterhelp/posterguide/>
-
-**demo video**
-
-Your website will have a video of your team demoing your project and giving a 1-minute or less pitch about it. Include the project's goal, what the software does, how to use it, why your team made it, and what you would do if you had more time.
+Each team will create a short (1-2 minute) video giving a pitch for your project and demonstrating its functionality.
+Consider including the project's goal, what the software does, how to use it, why your team made it, and what you would do if you had more time.
 
 The teaching team will offer suggestions and give feedback on draft videos related to production quality and content.
 
 
-**Submission mechanics**: (1) Your project README or project web site must link to your poster file and video. (2) Your poster must also be printed in time for the {{ part.due | date: '%b %-d' }} final event.
+
+
+**Submission mechanics**: 
+Your demo video must be completed and shared in time to present at the {{ part.due | date: '%b %-d' }} final event.
+Your project README or project web site must link to your video. Please do not host large binary files like your video in your GitHub repo; ask the teaching team if you need help with alternatives.
 
 ### Code submission
 
