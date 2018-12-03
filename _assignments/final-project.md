@@ -26,19 +26,24 @@ parts:
   due: 2018-11-30 17:00:00 -05:00
   tag: project-website-mvp
 - name: Project Website, feedback addressed
-  due: 2018-12-06 12:30:00 -05:00
-  tag: project-website-final
-- name: Final Deliverables
   due: 2018-12-11 16:00:00 -05:00
-  tag: demo-session-poster
+  tag: project-website-final
+- name: Demo Video
+  due: 2018-12-10 22:00:00 -05:00
+  tag: demo-session-video
+- name: Code Submission
+  due: 2018-12-11 17:30:00 -5:00
+  tag: code-submission 
 type: index
 team_registration_survey_part: 0
 proposal_part: 1
 arch_review_part: 2
 website_part: 4
 website_revision: 5
-expo_part: 6
-final_deliverables_part: 6
+video_part: 6
+code_part: 7
+expo_part: 7
+final_deliverables_part: 7
 ---
 
 {% include toc %}
@@ -194,7 +199,7 @@ project website from your GitHub repository.
 
 ### Demo Session Video
 
-{% assign part = page.parts[page.expo_part] %}
+{% assign part = page.parts[page.video_part] %}
 _Completed and shared before {{ part.due | date: '%-H:%M %p' }} on {{ part.due | date: '%A, %B %-d' }}_
 
 **The project video is worth 10% of the project grade.**
@@ -207,15 +212,14 @@ Consider including the project's goal, what the software does, how to use it, wh
 The teaching team will offer suggestions and give feedback on draft videos related to production quality and content.
 
 
-
-
 **Submission mechanics**: 
-Your demo video must be completed and shared in time to present at the {{ part.due | date: '%b %-d' }} final event.
-Your project README or project web site must link to your video. Please do not host large binary files like your video in your GitHub repo; ask the teaching team if you need help with alternatives.
+Submit a link to your demo video on Canvas.
+Your demo video must be completed and shared in time to present at the final event.
+Your project README or project web site should also link to your video. Please **do not** host large binary files like your video in your GitHub repo; ask the teaching team if you need help with alternatives.
 
 ### Code submission
 
-{% assign part = page.parts[page.expo_part] %}
+{% assign part = page.parts[page.code_part] %}
 _Due: {{ part.due | date: '%A, %B %-d' }}_
 
 **Project code is worth 40% of the project grade (see code rubric on the [course policy page]({% link pages/policies.md %}))**
@@ -240,7 +244,7 @@ Make sure that your code gives appropriate attribution to external resources
 used, as per the [course policy page]({% link pages/policies.md %}). If you have any questions
 about this, just ask.
 
-**Submission mechanics**: Verify that the link in the [Final Project Team Survey]({{ page.spreadsheet_url }}) is correct. Check that you have git pushed your final changes to GitHub.
+**Submission mechanics**: Push your work to GitHub, and verify that all your final changes are reflected on github.com. Submit a link to your work on Canvas.
 
 ### Final Demo / Presentation Session
 
