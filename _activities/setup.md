@@ -1,6 +1,6 @@
 ---
 title: Set Up Your Development Environment
-date: 2018-01-23 15:10:00 -04:00
+date: 2019-01-25 10:50:00 -04:00
 ---
 
 {% include toc %}
@@ -15,11 +15,12 @@ The instructions below will allow you to setup the “officially supported” en
 
 ## Step 1: Install Ubuntu
 
-Our officially supported OS is Ubuntu 16.04.3 64-bit ([link to ISO](http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso) - huge file).  There are two ways configure Ubuntu on your computer: dual boot and virtual machine.
+Our officially supported OS is Ubuntu 18.04.1 64-bit.
+The instructions below will help you get set up.
 
 ### Dual Boot (preferred)
 
-The preferred method for installing Ubuntu is to use what's known as a dual boot.  In this setup, you will have Ubuntu installed alongside Windows.  Upon startup of your computer, you will be able to choose which OS to boot into.  If you are going to be using a dual boot setup, the easiest way to get up and running is to use one of the provided SoftDes thumb drives.  These thumb drives have been pre-loaded with a bootable installer for Ubuntu 16.04.3.
+The preferred method for installing Ubuntu is to use what's known as a dual boot.  In this setup, you will have Ubuntu installed alongside Windows.  Upon startup of your computer, you will be able to choose which OS to boot into.  If you are going to be using a dual boot setup, the easiest way to get up and running is to use one of the provided SoftDes thumb drives.  These thumb drives have been pre-loaded with a bootable installer for Ubuntu 18.04.1.
 
 #### Creating Space for an Ubuntu Partition
 
@@ -50,7 +51,7 @@ Once you've booted into Ubuntu, the first thing you'll probably want to do is ge
 > 6. Click Connect.
 > 7. You will receive a warning reading “No Certificate Authority certificate chosen”. Click the box to the left of Don't warn me again to ignore future warnings and click Ignore.
 
-### Virtual Machine
+### Virtual Machine (not recommended)
 
 Another option is to use a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine).  In this variant you will run Ubuntu inside of a window inside of the Windows operating system (or Mac OSX if that is what you have).  We will also have thumb drives on hand that can be used to install Ubuntu as a virtual machine.  We recommend the freely available program [Virtual Box](https://www.virtualbox.org/) if you are running a VM.  Here are some guidelines to follow if you wind up using a VM.
 
@@ -63,8 +64,8 @@ Another option is to use a [virtual machine](https://en.wikipedia.org/wiki/Virtu
 To make sure your installation is up to date, you should run the following commands at the Linux terminal.  To open the terminal you can click on the "Search Your Computer" button in the top left of the Ubuntu desktop and type "terminal".  Note: that we use the convention of preceding a terminal command with the dollar sign (you don't actually need to type the dollar sign into the terminal).
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+$ sudo apt update
+$ sudo apt upgrade
 ```
 
 You may find [IT's instructions](http://wikis.olin.edu/linux/doku.php) useful for completing tasks such as setting up printers and the like (warning: these are somewhat out of date).
@@ -73,13 +74,13 @@ You may find [IT's instructions](http://wikis.olin.edu/linux/doku.php) useful fo
 
 [Adapted from _Modeling and Simulation in Python_, by Allen Downey.]
 
-You might already have Python installed on your computer, but you might not have the latest version. To use the materials in this course, you need Python 3.6, or later. Even if you have the latest version, you probably don’t have all of the libraries we need.
+You might already have Python installed on your computer, but you might not have the latest version. To use the materials in this course, you need Python 3.7, or later. Even if you have the latest version, you probably don’t have all of the libraries we need.
 
 You could update Python and install these libraries, but I strongly recommend that you don’t go down that road. I think you will find it easier to use **Anaconda**, which is a free Python distribution that includes many of the libraries you need in this course (and lots more).
 
-Anaconda is available for Linux, macOS, and Windows. By default, it puts all files in your home directory, so you don’t need administrator (root) permission to install it, and if you have a version of Python already, Anaconda will not remove or modify it.
+By default, Anaconda puts all files in your home directory, so you don’t need administrator (root) permission to install it, and if you have a version of Python already, Anaconda will not remove or modify it.
 
-To install Anaconda, visit the [Anaconda install page](http://docs.continuum.io/anaconda/install.html).  One quick note is that at the end of the install process you will be asked whether to prepend the path to anaconda to your `.bashrc` file.  You should select 'yes' to this prompt.  As the installer says, you will then need to open a terminal for this change to take effect.
+To install Anaconda, visit the [Anaconda install page](http://docs.continuum.io/anaconda/install/linux/).  One quick note is that at the end of the install process you will be asked whether to prepend the path to anaconda to your `.bashrc` file.  You should select 'yes' to this prompt.  As the installer says, you will then need to open a terminal for this change to take effect.
 
 ## Step 3: Verify Jupyter
 
@@ -168,9 +169,10 @@ If all goes well, this should bring up a web-browser with the reading questions.
 
 ## Step 5. Install Atom
 
-1. [Download and install](http://flight-manual.atom.io/getting-started/sections/installing-atom/) the [Atom text editor](https://atom.io) onto your computer.  Note: if you have a brand new install of Ubuntu, you may need to run `sudo apt-get install curl` before following these instructions.
+1. [Download and install](http://flight-manual.atom.io/getting-started/sections/installing-atom/) the [Atom text editor](https://atom.io) onto your computer.
 2. Follow the [Atom Basics](http://flight-manual.atom.io/getting-started/sections/atom-basics/) instructions to create a text file and save it.
-3. Follow the [Atom Packages](http://flight-manual.atom.io/using-atom/sections/atom-packages/) instructions to find and install the following packages: `python-tools`, `trailing-spaces`, `Hydrogen`.
+3. If you like you can explore the [Atom Packages](http://flight-manual.atom.io/using-atom/sections/atom-packages/) instructions to see what is available: 
+`script` is useful for running Python code, and we will use `Teletype` for collaboration.
 
 {::comment}
 On Windows, if you see an error like this:
