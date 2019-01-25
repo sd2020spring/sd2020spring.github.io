@@ -7,7 +7,7 @@
   - title: Reading Journal
     url: /reading-journal/
   - title: Library Reserves
-    url: https://olin.tind.io/record/1596306
+    url: https://olin.tind.io/record/1639977
 
 - title: Course Pages
   children:
@@ -26,10 +26,10 @@
     url: /resources/recipes/
   - title: Think Python
     url: http://greenteapress.com/wp/think-python-2e/
-  - title: Python 3.6 Documentation
-    url: https://docs.python.org/3.6/
-  - title: Python 3.6 Standard Library
-    url: https://docs.python.org/3.6/library/index.html
+  - title: Python 3.7 Documentation
+    url: https://docs.python.org/3.7/
+  - title: Python 3.7 Standard Library
+    url: https://docs.python.org/3.7/library/
   - title: Python Tutor
     url: http://www.pythontutor.com
   - title: Git Help
