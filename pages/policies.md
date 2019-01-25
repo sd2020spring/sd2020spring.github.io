@@ -12,11 +12,9 @@ If you have a documented disability (or think you may have a disability) and, as
  The DSO serves as a clearinghouse on disability issues and works in partnership with faculty and all other student service offices.
  For further information about services for students with disabilities, please contact the DSO.
 
-<!--
 ## Course Communications
 
-We will use Slack as our communications channel for this class. You responsible for course announcements that are posted to Slack. (By default, Slack will forward announcements to the email address that you use for your Slack account, if you are not running the Slack client.)
--->
+We will use Canvas as our communications channel for this class. You responsible for course announcements that are posted to Canvas.
 
 ## Course Components
 
@@ -24,9 +22,9 @@ Your evaluated work in this course will include:
 
 | Activity                          | Approx Weight |
 | --------------------------------- | ------------- |
-| Active Reading                    | 10%           |
+| Active Reading                    | 15%           |
 | Mini-Projects                     | 40%           |
-| Project Toolbox                   | 15%           |
+| Project Toolbox                   | 10%           |
 | Final Project                     | 30%           |
 | Participation and Professionalism | 5%            |
 
@@ -56,26 +54,27 @@ Reading journals must be submitted by pushing to GitHub before 9am on the day of
 There will be four mini-projects over the course of the semester. The first two will be completed individually, and you may work in teams on the second two. Combined, these four mini-projects will account for 40% of your final grade.
 
 
-### Late Submissions
-
-The late penalty is 10% per day. However, if you find you are struggling to keep up, the worst thing you can do is to suffer in silence. Please come talk to an instructor or a NINJA. Also, see the bottom of this document for the grading rubric. At the end of the semester we will eliminate the largest late penalty that you have incurred on any mini-project (note that this doesn't apply to things that need to be prepared specifically for a particular class such as project proposals). The one exception to this rule is that if you are 10 days late with an assignment (so you would receive a 0% without late penalty forgiveness), you will still receive a 0% on that assignment.
-
-_Example 1:_ All mini-projects are on time except mini-project 1 which was 2 days late and mini-project 2 which was 3 days late. When we calculate your final grade, the fact that you were 3 days late on mini-project 2 will be disregarded.
-
-_Example 2:_ All mini-projects are on time except mini-project 4 which is 10 days late. You will receive a 0% for mini-project 4. You do not benefit from late penalty forgiveness.
-
-
 ### Project Toolbox
 
 The purpose of the Project Toolbox exercises is to introduce you to a range of skills that we won't talk about in class, but that will be helpful for you as you work on your Final Project. Examples include building a graphical user interface, networking, and manipulating images.
 
 These exercises will be completed independently at your own pace, and you will be able to select from a range of options to match your interests. They will be assessed on a completion basis.
 
-You will complete at least four Project Toolbox exercises by the posted deadlines. 
+You will complete at least four Project Toolbox exercises by the posted deadlines.
+
+### Late Submissions
+
+The late penalty for mini-projects and toolboxes is 10% per day. However, if you find you are struggling to keep up, the worst thing you can do is to suffer in silence. Please come talk to an instructor or a NINJA. Also, see the bottom of this document for the grading rubric. At the end of the semester we will eliminate the largest late penalty that you have incurred on any single mini-project or toolbox (note that this doesn't apply to things that need to be prepared specifically for a particular class such as project proposals). The one exception to this rule is that if you are 10 days or more late with an assignment (so you would receive a 0% without late penalty forgiveness), you will still receive a 0% on that assignment.
+
+_Example 1:_ All mini-projects are on time except mini-project 1 which was 2 days late and mini-project 2 which was 3 days late. When we calculate your final grade, the fact that you were 3 days late on mini-project 2 will be disregarded.
+
+_Example 2:_ All mini-projects are on time except mini-project 4 which is 10 days late. You will receive a 0% for mini-project 4. You do not benefit from late penalty forgiveness.
+
 
 ### Final Project
 
 During the second half of the semester you will work will a small team on a project of your design. At the end of the semester you will present your project to the class and turn in your code and a final report. We will provide details as we go along.
+
 
 ### Participation and Professionalism
 
@@ -88,7 +87,7 @@ Some things you can do to help:
 1. Come to class on time! We will do our best to use class time effectively. Late arrivals are disruptive.
 2. Come to class prepared. Make sure you have always completed your reading journal.
 3. Try not to fall behind. If we are all working on the same stuff at the same time, everything works better.
-4. Be active in discussions in class and online, both asking and answering questions.
+4. Be active in discussions in class and online, both asking and answering questions. Complete all class surveys on time.
 5. Take care of your brain. Eat well, sleep well, get some exercises. Come to class ready to work.
 6. Be professional.
 7. Be respectful.
