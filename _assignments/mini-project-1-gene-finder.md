@@ -405,19 +405,23 @@ load the sequence as a FASTA file, use the provided `load_seq` function.
 >>> dna = load_seq("./data/X73525.fa")
 ```
 
-Use your `gene_finder` function on the Salmonella DNA sequence to get a list
-of candidate genes. We will be interpreting the results of your analysis
-during a scaffolded in-class activity.
 
+Use your `gene_finder` function on the Salmonella DNA sequence to get a list
+of candidate genes. 
 Also, if you are interested in comparing the results of your gene finder to a
 state-of-the art one, you can try out one called Glimmer
 [here](http://www.cs.jhu.edu/~genomics/Glimmer/).
+
+
+We will be practicing interpretation and analysis of protein results during a scaffolded in-class activity using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins) or [BLAT genome search](https://genome.ucsc.edu/cgi-bin/hgBlat?command=start). 
+Write up a short analysis of the candidate genes [2-3] you found, including what organism they likely come from, and their possible role within that organism. Commit this to your repo as `results.txt`.
+
 
 ### Turning in Week 2 Assignment
 
 In order to turn in your assignment make sure that your work is pushed to your GitHub repository and submit a link to `gene_finder.py` on Canvas.
 
-For the main assignment, all your code will be in `gene_finder.py`. If you
+For the main assignment, all your code will be in `gene_finder.py` and your analysis will be in `results.txt`. If you
 choose to do the **Going Beyond** portion, it is up to you how you structure
 your code for that portion.
 
