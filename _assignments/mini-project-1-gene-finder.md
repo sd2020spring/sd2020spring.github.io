@@ -318,7 +318,7 @@ how come?
 
 ### Turning in Week 1 Assignment
 
-You be turning in your week 1 assignment by pushing your code to Github (this will use the same process you are using for turning in the reading journals).  If you are struggling with the mini-project, we strongly advise you to meet with one of the NINJAs (either for some guidance, or just to look over your program). This week 1 work will be graded using the following rubric:
+You be turning in your week 1 assignment by pushing your code to Github (this will use the same process you are using for turning in the reading journals) and submitting a link to your `gene_finder.py` on Canvas.  If you are struggling with the mini-project, we strongly advise you to meet with one of the NINJAs (either for some guidance, or just to look over your program). This week 1 work will be graded using the following rubric:
 
 * No work has been turned in: 0%
 * Only a minimal attempt has been made to complete the first part of the mini-project: 50%
