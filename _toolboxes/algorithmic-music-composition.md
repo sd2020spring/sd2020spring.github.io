@@ -113,13 +113,13 @@ in the following way:
 
 ```python
 curr_note = 0
-play_note(blues_scale[curr_note], 1, beats_per_minute)
+play_note(BLUES_SCALE[curr_note], 1, BEATS_PER_MINUTE)
 licks = [[(1, 0.5), (1, 0.5), (1, 0.5), (1, 0.5)]]
 for _ in range(4):
     lick = licks[0]
     for note in lick:
         curr_note += note[0]
-        play_note(blues_scale[curr_note], note[1], beats_per_minute)
+        play_note(BLUES_SCALE[curr_note], note[1], BEATS_PER_MINUTE)
 ```
 
 Go ahead and try it! You will hear part of a blues scale!
