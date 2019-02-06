@@ -136,6 +136,28 @@ what pulling means is that you're taking the code that others have pushed to
 your repository and matching what you have on your computer with that, so it
 incorporates their changes.
 
+### Change git commit message editor
+
+Every git commit has a message attached, and you can read these in the history (run `git log`, q to quit. Try also `git whatchanged`).
+You can optionally provide that message when you commit by using the `-m` flag. This is fine for short messages, but clumsy as we begin to write longer and more detailed messages.
+
+If you don't use the `-m` flag, git will launch a text editor with a temporary file to capture the message. After you save this file and close the editor, the commit will proceed (closing the editor without saving will cancel the commit). You may have seen this happen for a merge commit as you pulled in Reading Journal day 2.
+
+By default git uses the [nano editor](https://www.nano-editor.org), but you can change it to whatever you want
+
+```bash
+$ git config --global core.editor your_favorite_editor_goes_here
+```
+
+If you'd like to use Atom to write your commit messages, you should do:
+
+```
+$ git config --global core.editor "atom --wait"
+```
+
+The `--wait` flag makes it so the commit proceeds after you save the temporary file and close the tab in Atom, as git expects.
+
+
 ### How to stash (and what is stashing?)
 
 ```bash
