@@ -28,9 +28,6 @@ There are also lots of opportunities to take things further – many of the topi
 
 ## Toolboxes
 
-**Full list of toolboxes will be posted soon**
-
-{::comment}
 {% if false %}
 {% assign toolboxes = site.toolboxes | where_exp: 'item', 'item.category==null' | sort: 'title' %}
 {% endif %}
@@ -38,7 +35,6 @@ There are also lots of opportunities to take things further – many of the topi
 {% for toolbox in toolboxes %}
 * [{{ toolbox.title }}]({{ toolbox.url }}
 ){% endfor %}
-{:/comment}
 
 ## Submitting exercises
 
