@@ -4,7 +4,7 @@ class_slides:  https://docs.google.com/presentation/d/18OgZ18wZEurC_nja5f2y8C4CK
 fa18_examples: https://docs.google.com/presentation/d/1OJnlflZJ7d2TTn07aCHYC4qhxeWp0vMOKbUQrcKQxwA/edit?usp=sharing
 sp18_examples: https://docs.google.com/presentation/d/1TDbUpzo3kdvvka5UhnTICgvo8GIsNDTtXSphuCPx09g/edit?usp=sharing
 sp17_examples: https://docs.google.com/presentation/d/1SAm11KrivkdTeYMbkK4oAloCBXDvclexjn56MhO4lB0/edit?usp=sharing
-due: 2019-04-12 10:50:00 -04:00
+due: 2019-03-12 10:50:00 -04:00
 ---
 
 {% include toc %}
@@ -24,14 +24,11 @@ that manipulates language in some interesting way).
 * Parsing text and storing it in relevant data structures
 * Choosing task-appropriate data structures (e.g. dictionaries versus lists)
 * Computational methods for characterizing and comparing text
-* Considering different stakeholders and consequences of your project
+* Considering alignment between the topic that you want to analyze, the data sources at your disposal, and the state of software tools available to you for dissecting the data.
 
 ## How to proceed
 
-This assignment may be completed individually or in teams of 2.
-In order to get started on the assignment, you should accept the assignment in Github classroom by clicking [this link]({{ site.data.github.textmining_invite }}).
-If you're working with a partner, one of you will accept the assignment for the team and then invite the other member to the repository once it is created.
-Once you've accepted the assignment, clone the repository on your computer.
+This is an individual assignment that each student will complete, starting by accepting the assignment in Github classroom by clicking [this link]({{ site.data.github.textmining_invite }}). Once you've accepted the assignment, clone the repository on your computer.
 
 You should read this document in a somewhat non-linear/spiral fashion:
 
@@ -40,19 +37,21 @@ You should read this document in a somewhat non-linear/spiral fashion:
 3. Choose (at least) one data source from Part 1 or elsewhere and analyze/manipulate/transform that text using technique(s) from Part 2 or elsewhere.
 4. Write a brief document about what you did ([Part 3](#part-3-project-write-up-and-reflection))
 
-## A Note on Time Management
+## Suggested Mid-point Milestones
 
-This project is divided into *three parts*, but they are all due on *the same day*.
+Time management will be important for this project. It is divided into *three parts*, but they are all due on *the same day*.
 
-You are of course encouraged to start early and work often. Beyond that, we
-have some advice that may not be intuitive:
+You are encouraged to start early and work often.
 
-The [Project Write-up and Reflection](#part-3-project-write-up-and-reflection)
-is described after the implementation work. However, you may find it beneficial to
-write the "Project Overview" and take a stab at the "Implementation" and "Results", early in the process. The Implementation may be vague and you will likely need
-to revise it later, and the Results can sketch what you hope to find instead
-of presenting hard data, but this kind of endpoint-first design can help
-guide your implementation work.
+* By the first class session following the Mini-Project 3 kickoff...
+  * you should have attempted to secure text from at least one or two of the sources listed (or others you deem appropriate).
+* By the second class session following the Mini-Project 3 kickoff...
+  * you should have a means of locally storing data from the source you have selected.
+* By the third class session following the Mini-Project 3 kickoff...
+  * Your code should have the elements of an organized structure in place. We expect that you will define functions, and are looking for submission that have function and more style than a flat list of commands. We encourage using classes if the understanding is there to do so.
+* Some additional advice that may not be intuitive:
+  * The [Project Write-up and Reflection](#part-3-project-write-up-and-reflection) is described after the implementation work. However, you may find it beneficial to write the "Project Overview" and take a stab at the "Implementation" and "Results", early in the process. The Implementation may be vague and you will likely need to revise it later, and the results can sketch what you hope to find instead of presenting hard data, but this kind of endpoint-first design can help guide your implementation work.
+
 
 ## Part 1: Harvesting text from the Internet
 
@@ -88,9 +87,13 @@ check out the [Web APIs Project Toolbox](/toolboxes/geocoding-and-web-apis) tool
 
 For some of these data sources you will be generating some sort of secret authentication key.  The tempting thing to do is to insert this secret right into your code, and then check it into GitHub.  The problem with this is that in cases where your repository is public, someone might actually find your API key and use it themselves.  While we are not requiring you to follow best practices in this assignment with your API keys (after all your repository is private), if you want to start practicing good habits, we have [a notebook that walks you through ways to handle private keys with version controlled code](/notes/storing-api-keys).
 
-### Ethically Sourcing Data
+### Considerations for Selecting Data Sources
 
-When you choose a data source, think about whose data you are harvesting, what biases might the dataset have, and the limitations of what you can use it for.Put your reflections in your project write-up.
+When you submit this assignment, you will be including a reflection in your write-up that discusses (roughly a paragraph each):
+1. The set of questions you had that sparked your exploration, and what you imagined an answer might look like upon completion.
+2. Why you felt that the data source(s) you selected could help you explore those questions. What were the limitations?
+3. How well the tools that you employed to analyze the data served you during the exploration. How confident are you in the answers yielded? What were the tools' limitations?
+
 
 ### Data Source: Project Gutenberg
 
@@ -317,9 +320,9 @@ Toolbox](/toolboxes/pickling) assignment.
 
 ## Part 2: Analyzing Your Text
 
-### Ethical Analysis
+### Considerations for Your Analysis
 
-When you choose an approach to analyze your test, think about how this approach can and can’t answer the questions you want to ask of the text data you have. When you run a certain analysis is it inherently corrupted because of certain biases in your data? Discuss in your write-up the limitations of your approach overall and how might you mitigate them given more time.
+When you choose an approach to analyze your test, think about how this approach can and can’t answer the questions you want to ask of the text data you have. To what degree do you consider the data capable of providing an answer that is convincing (to you, or others). Did you make any assumptions about how the data was collected? In the write-up, include how you might mitigate limitations of your analysis if given more time.
 
 ### Characterizing by Word Frequencies
 
@@ -494,7 +497,6 @@ following sections:
 
 What data source(s) did you use and what technique(s) did you use
 analyze/process them? What did you hope to learn/create?
-What was the major ethical red flag raised along the way?
 
 **Implementation** _[~2-3 paragraphs]_
 
@@ -512,23 +514,26 @@ Present what you accomplished:
 * If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.
 * If you created a program that does something interesting (e.g. a Markov text synthesizer), be sure to provide a few interesting examples of the program's output.
 
-**Limitations** _[~1 paragraph]_
+**Alignment** _[~3 paragraphs]_
 
-Talk about why you chose your data set and analysis technique. Discuss the biases and limitations of each.
+How much alignment did you find between what you set out to explore and the data and tools used to carry out the project?
+What was set of questions you had that sparked your exploration, and what you imagined an answer might look like upon completion? To what degree did you feel that the data source(s) you selected could help you explore those questions given its limitations?
+How well did the tools that you employed, given their limitations, serve you during the analysis. How confident are you in the answers they provided.
 
 **Reflection** _[~1 paragraph]_
 
 From a process point of view, what went well? What could you improve?
-How would you attempt to mitigate the ethical problems with your project?
-Other
-possible reflection topics: Was your project appropriately scoped? Did you
+How would you attempt to mitigate the data-related or tool-choice problems with your project?
+Other possible reflection topics: Was your project appropriately scoped? Did you
 have a good plan for unit testing? How will you use what you learned going
 forward? What do you wish you knew before you started that would have helped
 you succeed?
 
+For grading purposes, the combination of the reflection/alignment/write-up and the slide you submit will account for 20% of the total grade. 
+
 ## Turning in your assignment
 
-* Your code should submitted as either (a) Python file (or files) that can be executed by running *e.g.* `python text_mining.py`, or (b) a Jupyter notebook.
+* Your code should be submitted as either (a) Python file (or files) that can be executed by running *e.g.* `python text_mining.py`, or (b) a Jupyter notebook.
 * If you submit a Python file:
   * The project README must describe how to install any required packages and how to run it (e.g. `python text_mining.py`)
 * If you submit a Jupyter notebook:
