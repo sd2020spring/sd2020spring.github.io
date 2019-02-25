@@ -24,6 +24,7 @@ that manipulates language in some interesting way).
 * Parsing text and storing it in relevant data structures
 * Choosing task-appropriate data structures (e.g. dictionaries versus lists)
 * Computational methods for characterizing and comparing text
+* Considering different stakeholders and consequences of your project
 
 ## How to proceed
 
@@ -86,6 +87,10 @@ check out the [Web APIs Project Toolbox](/toolboxes/geocoding-and-web-apis) tool
 ### A Note About API Keys
 
 For some of these data sources you will be generating some sort of secret authentication key.  The tempting thing to do is to insert this secret right into your code, and then check it into GitHub.  The problem with this is that in cases where your repository is public, someone might actually find your API key and use it themselves.  While we are not requiring you to follow best practices in this assignment with your API keys (after all your repository is private), if you want to start practicing good habits, we have [a notebook that walks you through ways to handle private keys with version controlled code](/notes/storing-api-keys).
+
+### Ethically Sourcing Data
+
+When you choose a data source, think about whose data you are harvesting, what biases might the dataset have, and the limitations of what you can use it for.Put your reflections in your project write-up.
 
 ### Data Source: Project Gutenberg
 
@@ -312,6 +317,10 @@ Toolbox](/toolboxes/pickling) assignment.
 
 ## Part 2: Analyzing Your Text
 
+### Ethical Analysis
+
+When you choose an approach to analyze your test, think about how this approach can and can’t answer the questions you want to ask of the text data you have. When you run a certain analysis is it inherently corrupted because of certain biases in your data? Discuss in your write-up the limitations of your approach overall and how might you mitigate them given more time.
+
 ### Characterizing by Word Frequencies
 
 One way to begin to process your text is to take each unit of text (for instance a book from Project Gutenberg, or perhaps some Tweets regarding a topic of interest) and summarize it by counting the number of times a particular word appears in the text. A natural way to approach this in
@@ -481,10 +490,11 @@ We have put together [a notebook](/notes/Frankenstein and Dracula Text Analysis)
 Please prepare a short (suggested lengths given below) document with the
 following sections:
 
-**Project Overview** _[Maximum 100 words]_
+**Project Overview** _[Maximum 200 words]_
 
 What data source(s) did you use and what technique(s) did you use
 analyze/process them? What did you hope to learn/create?
+What was the major ethical red flag raised along the way?
 
 **Implementation** _[~2-3 paragraphs]_
 
@@ -502,9 +512,15 @@ Present what you accomplished:
 * If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.
 * If you created a program that does something interesting (e.g. a Markov text synthesizer), be sure to provide a few interesting examples of the program's output.
 
+**Limitations** _[~1 paragraph]_
+
+Talk about why you chose your data set and analysis technique. Discuss the biases and limitations of each.
+
 **Reflection** _[~1 paragraph]_
 
-From a process point of view, what went well? What could you improve? Other
+From a process point of view, what went well? What could you improve?
+How would you attempt to mitigate the ethical problems with your project?
+Other
 possible reflection topics: Was your project appropriately scoped? Did you
 have a good plan for unit testing? How will you use what you learned going
 forward? What do you wish you knew before you started that would have helped
