@@ -40,20 +40,22 @@ Most of the Ubuntu installation should proceed without much intervention on your
 2.  Don't worry about connecting to a network during install (you can click the box that says "Don't connect to a network").
 3.  Click the option "Install 3rd Party Software"
 
-Once you've booted into Ubuntu, the first thing you'll probably want to do is get setup with the wireless.  For your convenience, we have copied the instructions from IT's Linux Wiki on how to sign into the Olin network.
+Once you've booted into Ubuntu, the first thing you'll probably want to do is get setup with WiFi. 
+These instructions assume you have an Olin network account
+(cross-registered students should visit the Olin IT department in the basement of Milas Hall to get set up with an account).
 
-> Wireless configuration:
-> 1. Click the NetworkManager icon in the system tray, which is normally just to the left of the speaker icon.
-> 2. Select the OLIN wireless network.
-> 3. Set Authentication to Protected EAP (PEAP).
-> 4. In the Username: field, enter your Windows username followed by “@olin.edu”. Note that this is not your email address! For example, Joe Student would enter jstudent@olin.edu.
-> 5. In the Password: field, enter your Windows password.
-> 6. Click Connect.
-> 7. You will receive a warning reading “No Certificate Authority certificate chosen”. Click the box to the left of Don't warn me again to ignore future warnings and click Ignore.
+1. Click the NetworkManager icon in the system tray, which is normally just to the left of the speaker icon
+1. Select the OLIN wireless network.
+1. Fill in your settings as shown and click "Connect"
+
+![]({% link images/setup/wifi_settings.png %})
 
 ### Virtual Machine (not recommended)
 
-Another option is to use a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine).  In this variant you will run Ubuntu inside of a window inside of the Windows operating system (or Mac OSX if that is what you have).  We will also have thumb drives on hand that can be used to install Ubuntu as a virtual machine.  We recommend the freely available program [Virtual Box](https://www.virtualbox.org/) if you are running a VM.  Here are some guidelines to follow if you wind up using a VM.
+Another option is to use a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine).  In this variant you will run Ubuntu inside of a window inside of the Windows operating system (or Mac OSX if that is what you have).  
+Running Python in a virtual machine works for most cases, but is known to not work for others (e.g. audio processing), so it is not recommended for this course.
+We will also have thumb drives on hand that can be used to install Ubuntu as a virtual machine.  
+If you are running a VM, we recommend the freely available program [Virtual Box](https://www.virtualbox.org/).  Here are some guidelines to follow if you wind up using a VM.
 
 1.  Make sure to allocate at least 2 CPUs (preferably 4) and at least 2 GB (preferably 4GB) of RAM to your Ubuntu VM.
 2.  If you are using VirtualBox, make sure to install the VirtualBox Guest Additions once your Ubuntu is up and running.
@@ -81,6 +83,7 @@ You could update Python and install these libraries, but I strongly recommend th
 By default, Anaconda puts all files in your home directory, so you don’t need administrator (root) permission to install it, and if you have a version of Python already, Anaconda will not remove or modify it.
 
 To install Anaconda, visit the [Anaconda install page](http://docs.continuum.io/anaconda/install/linux/).  One quick note is that at the end of the install process you will be asked whether to prepend the path to anaconda to your `.bashrc` file.  You should select 'yes' to this prompt.  As the installer says, you will then need to open a terminal for this change to take effect.
+You do not need to provide your email to get the "cheat sheet", and you don't need to install Microsoft VSCode.
 
 ## Step 3: Verify Jupyter
 
@@ -96,14 +99,19 @@ We will make heavy use of Git (and GitHub in this class). Haven’t heard of Git
 
 ### Install Git
 
-If you just installed Ubuntu, you will need to install Git using the instructions below.  If you had an existing Ubuntu installation, Git may already be installed on your system. Enter `git --version` into a terminal window to test. If this prints something like `git version 2.14.1`, you are good to go. (The exact number doesn't matter, so long as it's 2.something.)
+If you just installed Ubuntu, you will need to install Git using the instructions below.  If you had an existing Ubuntu installation, Git may already be installed on your system. Enter `git --version` into a terminal window to test. If this prints something like `git version 2.17.1`, you are good to go. (The exact number doesn't matter, so long as it's 2.something.)
 
 Otherwise, you can install it from the terminal by running the command
 ```bash
 $ sudo apt-get install git
 ```
 
-Set up your Git identity by following the instructions in [Chapter 1](https://github.com/AllenDowney/amgit/blob/master/en/01-introduction/01-chapter1.markdown#first-time-git-setup).
+Set up your Git identity by following the instructions in [Chapter 1](https://github.com/AllenDowney/amgit/blob/master/en/01-introduction/01-chapter1.markdown#first-time-git-setup). At minimum, you must set your name and email before you can commit anything:
+
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email jondoe@example.com
+```
 
 {::comment}
 If you are a macOS user and you are using [homebrew](https://brew.sh), you can run `brew install git` instead of download  git from the download page. If you don't know what this means, use the download page.

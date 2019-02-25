@@ -51,7 +51,7 @@ Reading journals must be submitted by pushing to GitHub before 9am on the day of
 
 ### Mini-Projects
 
-There will be four mini-projects over the course of the semester. The first two will be completed individually, and you may work in teams on the second two. Combined, these four mini-projects will account for 40% of your final grade.
+There will be four mini-projects over the course of the semester. The first three will be completed individually, and you may work in teams on the fourth. Combined, these four mini-projects will account for 40% of your final grade.
 
 
 ### Project Toolbox
