@@ -167,14 +167,14 @@ Fix these two problems (using `0.0.0.0`, and reading the port number from an env
 1. Add this line to the top of your file:
 
     ```python
-    import os.environ
+    import os
     ```
 
 2. Define `HOST` and `PORT` as below. Then add `host` and `port` arguments to the `app.run` function. Commit the change, `git push` to Heroku again, and test again. You should see your web page.
 
     ```python
     HOST = '0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
-    PORT = int(os.environ.get('PORT', 5000)))
+    PORT = int(os.environ.get('PORT', 5000))
     app.run(host=HOST, port=PORT)
     ```
 
