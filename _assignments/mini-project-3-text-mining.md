@@ -37,20 +37,20 @@ You should read this document in a somewhat non-linear/spiral fashion:
 3. Choose (at least) one data source from Part 1 or elsewhere and analyze/manipulate/transform that text using technique(s) from Part 2 or elsewhere.
 4. Write a brief document about what you did ([Part 3](#part-3-project-write-up-and-reflection))
 
-## Suggested Mid-point Milestones
+## Suggested Milestones
 
-Time management will be important for this project. It is divided into *three parts*, but they are all due on *the same day*.
+Time management will be important for this project. It is divided into *three parts*, but they are all due on *the same day*. You are encouraged to start early, work steadily, and seek help often.
 
-You are encouraged to start early and work often.
+Since you have so much freedom on this project there's not one proper path for everyone, but you should consider the following suggested timeline:
 
 * By the first class session following the Mini-Project 3 kickoff...
   * you should have attempted to secure text from at least one or two of the sources listed (or others you deem appropriate).
-* By the second class session following the Mini-Project 3 kickoff...
+* By the second class session following the kickoff...
   * you should have a means of locally storing data from the source you have selected.
-* By the third class session following the Mini-Project 3 kickoff...
-  * Your code should have the elements of an organized structure in place. We expect that you will define functions, and are looking for submission that have function and more style than a flat list of commands. We encourage using classes if the understanding is there to do so.
-* Some additional advice that may not be intuitive:
-  * The [Project Write-up and Reflection](#part-3-project-write-up-and-reflection) is described after the implementation work. However, you may find it beneficial to write the "Project Overview" and take a stab at the "Implementation" and "Results", early in the process. The Implementation may be vague and you will likely need to revise it later, and the results can sketch what you hope to find instead of presenting hard data, but this kind of endpoint-first design can help guide your implementation work.
+* By the third class session following the kickoff...
+  * Your code should have the elements of an organized structure in place. We expect that your final submission will be a proper program in which you define multiple well-thought out functions (rather than a basic script starting point with just a flat list of commands). We also encourage you to try using classes if the understanding is there to do so.
+* Some additional planning advice:
+  * The [Project Write-up and Reflection](#part-3-project-write-up-and-reflection) is described after the implementation work. However, you may find it beneficial to write the "Project Overview" and a draft of the "Implementation" and "Results", early in the process. The Implementation may be vague and you will likely need to revise it later, and the results can sketch what you hope to find instead of presenting hard data, but this kind of endpoint-first design can help guide your implementation work.
 
 
 ## Part 1: Harvesting text from the Internet
@@ -529,7 +529,7 @@ have a good plan for unit testing? How will you use what you learned going
 forward? What do you wish you knew before you started that would have helped
 you succeed?
 
-For grading purposes, the combination of the reflection/alignment/write-up and the slide you submit will account for 20% of the total grade. 
+For grading purposes, the combination of the reflection/alignment/write-up and the slide you submit will account for 20% of the total grade.
 
 ## Turning in your assignment
 
@@ -541,20 +541,15 @@ For grading purposes, the combination of the reflection/alignment/write-up and t
   * You must *also* submit a Python text file.
     Use the File > Download as > Python menu item to download a text file, and `git add` it to your repo.
 
-1\. Submit your Project Write-up/Reflection. This can be in the form of:
-
+1. Submit your Project Write-up/Reflection. This can be in the form of:
   * a [Markdown](https://guides.github.com/features/mastering-markdown/) file, committed to your repository, or
   * a Jupyter notebook, committed to your repository, or
   * a PDF document, committed to your repository, or
-  * a [project webpage](https://pages.github.com/).
+  * a [project webpage](https://pages.github.com/).  
+1. Push your code to GitHub. You should also include a `README.md` file in your repository briefly explaining your project and linking to your Project Write-up/Reflection.
+1. Add a slide summarizing your work to the [class presentation]({{ page.class_slides }}). See more details below.
+1. Submit on Canvas
 
-Make sure to include a link to the Project Write-up/Reflection in the `README.md` file in your repository (otherwise, we won't be able to find it).
-
-2\. Push your code to GitHub
-
-3\. Add a slide summarizing your work to the [class presentation]({{ page.class_slides }}). See more details below.
-
-4\. Submit on Canvas
 
 ## Project Presentations
 
@@ -562,12 +557,14 @@ In order to share what you discovered/created as part of your text mining projec
 
 Professionalism is important in public presentations, so please use the “would I be happy for my parents to read this in the newspaper” test when uploading content. Humor is great; abusive language or disparaging groups of people is firmly not acceptable.
 
+<!--
+
 Here's some examples from previous semesters:
  * [Spring 2018 MP3 examples]({{ page.sp18_examples }})
  * [Fall 2018 MP3 examples]({{ page.fa18_examples }})
  * [Spring 2017 MP3 examples]({{ page.sp17_examples }})
 
-<!-- ## Revision
+## Revision
 
 {% assign part = page.parts[1] %}
 _Due: {{ part.due | date: site.part_due_date_format }}_
