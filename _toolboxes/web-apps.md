@@ -269,7 +269,7 @@ One thing you can do once completing this toolbox is deploy your Flask applicati
 You will learn how to use `git push` to deploy to the Heroku hosting service, how to configure a Flask application to accept external requests, and how and why to configure a Flask application to listen on different TCP/IP ports.
 
 
-## Get Set
+### Get Set
 
 1. Follow the instructions [here](https://signup.heroku.com) to sign up for
    a (free) account Heroku cloud platform. Heroku manages servers that will
@@ -283,7 +283,7 @@ You will learn how to use `git push` to deploy to the Heroku hosting service, ho
     Email: youremail@olin.edu
     Password (typing will be hidden):
 
-## Create a Heroku application
+### Create a Heroku application
 
 Run `heroku apps:create` to create a Heroku **application**:
 
@@ -297,7 +297,7 @@ https://boiling-brushlands-71788.herokuapp.com/ | https://git.heroku.com/boiling
 for your application. You can also *specify* a name, so long as it is unique among all Heroku applications (for all users).
 For example, `heroku app:create softdes-toolbox` makes my application available at `https://softdes-toolbox.herokuapp.com`.
 
-## Publish Your Application to Heroku
+### Publish Your Application to Heroku
 
 ```bash
 $ cd /path/to/web-app
@@ -325,7 +325,7 @@ You should see an error message:
     ! [remote rejected] 7039fff -> master (pre-receive hook declined)
     error: failed to push some refs to 'https://git.heroku.com/my-heroku-app-name.git'
 
-## Why Doesn't it Work (pt. 1 of 2)? – Setting Your Repo Up for Heroku
+### Why Doesn't it Work (pt. 1 of 2)? – Setting Your Repo Up for Heroku
 
 If you Google around and spend some time learning what a "buildpack" is
 (not required for this toolbox), you will eventually learn that Heroku
@@ -386,7 +386,7 @@ Here's what to do:
     To https://git.heroku.com/my-heroku-app-name.git
     ```
 
-## Open Your App in a Browser
+### Open Your App in a Browser
 
 Do you do this in one two ways:
 
@@ -398,7 +398,7 @@ Do you do this in one two ways:
 
 You should see an “Application Error” page.
 
-## Why Doesn't it Work (pt. 2 of 2)? Configuring Your Server to Accept Remote Connections
+### Why Doesn't it Work (pt. 2 of 2)? Configuring Your Server to Accept Remote Connections
 
 By default, your application only accepts HTTP requests from the same machine.
 This is because it uses `127.0.0.1` as the host.
@@ -427,7 +427,7 @@ Fix these two problems (using `0.0.0.0`, and reading the port number from an env
     app.run(host=HOST, port=PORT)
     ```
 
-## Whitelist the Domain
+### Whitelist the Domain
 
 **Problem:** Olin's [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) provider blocks some new sites from the Olin network after a 1-3 day grace period.
 Your app may work for a while, and then stop working with the message below:
