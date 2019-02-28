@@ -3,7 +3,7 @@ SoftDes in-class exercise: Geometry classes
 """
 
 
-class Line(object):
+class Line:
     def __init__(self, x0, y0, x1, y1):
         pass
 
@@ -110,7 +110,7 @@ class Line(object):
         pass
 
 
-class Rect(object):
+class Rect:
     def __init__(self, x0, y0, x1, y1):
         pass
 

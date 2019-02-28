@@ -1,0 +1,39 @@
+Class is a way to establish a new base function that is not already part of python.
+A class is a structure type that I can create for uses specific to my program, if it seems more useful than the predefined types.
+It is a type that's defined by the programmer
+where you can define variables and methods, and create objects
+A class is a object where it can be assign attributes (actions) that can be called later.
+A class is a customizable type of object which allows us to create our own types. We can implement our own implementations for string operations, etc for these new types.
+A Class is like an object constructor; it is a "blueprint" for creating objects.
+I think of a class like a blueprint for an object, which basically means that it defines the characteristics and behavior for the object.
+A class is a blueprint for making multiple objects
+A class is a type that is created or installed by a programmer and can then be used to make objects (or instances of the class) which share attributes of the class.
+A class is a device that allows us to create a family of similarly-defined objects that all follow the same behaviors
+A user defined data type that maintains state and functionality.
+Grouping of object's components / Creates an object characteristic sort of layout thing.
+A class is a special function in Python that stores data inputs in a certain manipulatable structure, they make the creation of objects possible (certain values for variables for each in the class)
+A type that is defined by a programmer to represent types that do not exist in the programming language.
+A class is like a dictionary, but without key and values. It is more flexible than dictionary, and can be used to define and create a new world of specifications and restraints in which it can be used and refrenced in future coding.
+A class is a way of creating objects. For example, the class Point creates an object that is a point in a 2d field. That point has different attributes, such as a y value and an x value.
+A class is an object type that has been defined by the programmer.
+A class is a framework to make new objects
+A class is an object that has properties and abilities.
+A class in python gives you an outline to define an object.
+A class is a way to create your own python object/data structure that can be used repeatedly.
+A class is a programmer-defined type.
+A class is a custom object type designed by the programmer.
+A class is a user-created object that serves as a factory for other user created objects
+A class is a way the programmer can create their own types in python with much broader potential than the standard builtins.
+A class creates objects, and is capable of creating multiple copies of that object that is assigned to different variables.
+A class is a type that a programmer creates.
+A class is a home-made type.
+A class is a programmer defined type.
+A user defined type that can store attributes.
+A class is a type created by the programmer.
+A class is a way for programmers to make their own data types
+A class is a unique object that can be attributted values / methods for multiple uses.
+A class is a user-defined object that can hold multiple variables and makes it easy to catagorize a thing with many bariables into an object with attributes.
+A structure that we can create instances of, that has its own attributes and built in functions
+A storage for self defined objects.
+It's a type you make with its own unique attributes.
+A series of methods that can be applied to different instances of objects
