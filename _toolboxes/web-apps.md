@@ -436,26 +436,7 @@ Your app may work for a while, and then stop working with the message below:
 
 **Solution:** Send a message to <helpdesk@olin.edu>: “I am using the domain name myapp.herokuapp.com for a class project, and need access to it from within the Olin network. Please configure DNS so that it does not block this site.”
 
-## What to Turn In
-
-1. Add more functionality to the application. For example, another of the items from the "Going further" section of the [Web App]({% link _toolboxes/web-apps.md %}) toolbox.
-
-2. Add a link from your GitHub repo to your (Heroku) application URL.
-
-   Here's how to add the link:
-
-   1. Open your repo page on GitHub.
-
-      Near the top of the page is an Edit button;
-      this discloses text entry fields for a project Description and Website.
-
-   2. Paste your application URL into the Website field, and Save.
-
-3. Show your work to a NINJA.
-
-4. You should be prepared to explain the motivation for the `HOST =` and `PORT =` lines that you added, and how they work.
-
-## Going Beyond
+## Even More To Do
 
 Some things you can do to learn more and/or have more fun:
 
