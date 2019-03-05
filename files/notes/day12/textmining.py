@@ -14,8 +14,9 @@ Call me Ishmael.
 # (but you should)
 
 import os
-import sys
 import requests
+import sys
+import time
 
 def strip_scheme(url):
     """
@@ -118,8 +119,8 @@ if __name__ == '__main__':
     #import doctest
     #doctest.testmod()
 
-    import pprint
+    from pprint import pprint   # "Pretty-print" dictionary
     books = run_example()
-    pprint.pprint(books)
-    for title, book in books.items():
-        print(book.text[2000:2010])
+    pprint(books)
+    #for title, book in books.items():
+    #    print(book.text[2000:2010])import sys
