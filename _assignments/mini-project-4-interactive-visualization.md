@@ -301,23 +301,26 @@ Its purpose is to allow us to help shape your project in useful directions - and
 {% assign part = page.parts[1] %}
 _Due on or before: {{ part.due | date: site.part_due_date_format }}_
 
-We are requiring a mid-project check-in with course staff for this project. 
-This check-in is self-scheduled whenever it makes sense for your team, but must occur no later than {{ part.due | date: site.part_due_date_format }}.
-The grading for this check-in will be 0% if you miss it or blow it off, 50% if
-you have minimal work done before the check-in, and 100% if you have made a
-sincere effort to get your project off the ground. The mid-project check-in
-will comprise 15% of the final grade for this project.
 
-Given that different teams' projects will be very different, there is no one
-set of things that are appropriate for you to have done by the mid-project
-check-in. We will have the opportunity to provide guidance around this when we
-review your project proposal. However, here are a list of fairly
-generic goals for the mid-project check-in:
+We are requiring an online mid-project check-in with course staff for this project. 
+You may submit this check-in as soon as your team has made significant progress, but no later than {{ part.due | date: site.part_due_date_format }}.
 
-* You should have good sense of the major classes that you will need to create for your project. A UML diagram (see _Think Python_) will be a useful thing to have as well.
+The mid-project check-in will comprise 15% of the final grade for this project. The grading for this check-in will be:
+ - 0% if you miss it or blow it off
+ - 50% if you have a write-up that offers minimal coverage to the prompts and points to barely-started work
+ - 100% if you demonstrate a concerted effort to get your project off the ground and cover the prompts below thoroughly (which can still be done concisely). 
+
+Given that different teams’ projects will be very different, there is no one set of things that are appropriate for you to have done by the mid-project check-in. Course staff will review your online check-ins and respond with written comments if necessary. Here are a list of fairly generic goals for the mid-project check-in that you will want to communicate to us:
+
+
+* You should have good sense of the major classes that you will need to create for your project. A UML diagram (see [_Think Python_](http://greenteapress.com/thinkpython2/html/thinkpython2019.html#sec217)) will be a useful thing to have as well.
 * You should have a clear implementation plan. This includes how you will divide (or not divide) up the programming tasks among you and your partner.
 * If you are planning to use a library that you read about, you should have verified that you can install it and that it can be used for the purpose that you want.
 * You should have a good start on implementing some of the classes for your project.
+
+Submit a text status update on Canvas addressing these generic goals and the specific goals you identified in your proposal, and pointing to concrete evidence of progress for each (i.e. links to work in your repository).
+This check-in must be submitted by {{ part.due | date: site.part_due_date_format }} at the very latest. If you've made significant progress before then we encourage you to submit earlier and get actionable feedback sooner.
+
 
 ### Project Write-up and Reflection
 
@@ -351,6 +354,7 @@ possible reflection topics: Was your project appropriately scoped? Did you
 have a good plan for unit testing? How will you use what you learned going
 forward? What do you wish you knew before you started that would have helped
 you succeed?
+If your project involved use of a data set, consider asking the same questions about alignment that you addressed in MP3.
 
 Also discuss your team process in your reflection. How did you plan to divide
 the work (*e.g.* split by class, always pair program together, *etc.*) and how did
