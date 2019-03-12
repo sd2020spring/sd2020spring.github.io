@@ -311,7 +311,7 @@ will comprise 15% of the final grade for this project.
 Given that different teams' projects will be very different, there is no one
 set of things that are appropriate for you to have done by the mid-project
 check-in. We will have the opportunity to provide guidance around this when we
-meet with you at the project proposal. However, here are a list of fairly
+review your project proposal. However, here are a list of fairly
 generic goals for the mid-project check-in:
 
 * You should have good sense of the major classes that you will need to create for your project. A UML diagram (see _Think Python_) will be a useful thing to have as well.
