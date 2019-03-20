@@ -13,7 +13,7 @@ parts:
   due: 2019-03-26 10:50:00 -04:00
   tag: mid-project-check-in
 - name: Project Write-up and Reflection
-  due: 2019-03-29 10:50:00 -04:00
+  due: 2019-04-02 10:50:00 -04:00
   tag: project-write-up-and-reflection
 ---
 
