@@ -256,21 +256,18 @@ from flask import Flask, render_template, request
 
 You can access the form data by the name you assigned the each input in the form html.
 
-<dl>
-  <dt>`response.html`</dt>
-  <dd>
+#### `response.html`
+
   ```html
   <p><input type=text username=username>
   ```
-  </dd>
 
-  <dt>`flask_app.py`</dt>
-  <dd>
+
+#### `flask_app.py`
   ```python
   request.form['username']
   ```
-  </dd>
-</dl>
+
 
 
 
