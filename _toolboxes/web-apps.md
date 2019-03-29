@@ -245,22 +245,14 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 
 `questions.html` should be the first page the user see when you run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA. To do this, you will need to create an html form.
 
->If you are unfamiliar with forms, check out:
->
-> [this resource](http://www.w3schools.com/html/html_forms>.asp)
->
-> [this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
+>If you are unfamiliar with forms, check out [here](http://www.w3schools.com/html/html_forms>.asp) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
 
 
 ### Response
 
 `response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. This means that you have to understand sending data from the html form as well as actions and methods in order to create a functioning submit button.
 
->For information about sending data, actions, and methods, check out:
->
-> [this resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm)
->
-> [this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
+>For information about sending data, actions, and methods, check out [here](https://www.tutorialspoint.com/flask/flask_http_methods.htm) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
 
 
 In order to render the information from the form, you need a way to access the form data. In order to access the inputs, you must use the request object which you can read about [here](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object).
