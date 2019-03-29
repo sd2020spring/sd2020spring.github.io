@@ -60,6 +60,7 @@ Final Event period for this class, with an EXPO style demo session.
 
 * As this class is called "Software Design", your project should have a substantial software design component (interfacing with mechanical or electrical systems is considered on a case by case basis, but the software should be the major component).
 * Most of the your final project should be written in Python. It is okay if some amount is written in another language, but the bulk of the project should be implemented in Python. Part of the reason for this requirement is to facilitate peer design reviews.
+* You will create a Software Impact Statement that illustrates your reflection on the ethical considerations you made throughout the design process, starting with project ideation and the priorities you set for your team.
 
 ### Suggestions for Project Topics
 
@@ -109,7 +110,7 @@ Create a document on your team's final project repo that answers the following q
 3. **Implementation Plan:** This will probably be pretty vague initially. Perhaps at this early juncture you will have identified a library or a framework that you think will be useful for your project. If you don't have any idea how you will implement your project, provide a rough plan for how you will determine this information.
 4. **Project schedule:** You have 6 weeks (roughly) to finish the project. Sketch out a rough schedule for completing the project. Depending on your project, you may be able to do this in great specificity or you may only be able to give a broad outline. Additionally, longer projects come with increased uncertainty, and this schedule will likely need to be refined along the way.
 5. **Collaboration plan:** How do you plan to collaborate with your teammates on this project? Will you split tasks up, complete them independently, and then integrate? Will you pair program the entire thing? Make sure to articulate your plan for successfully working together as a team. This might also include information about any software development methodologies you plan to use (e.g. [agile development](http://en.wikipedia.org/wiki/Agile_software_development)). Make sure to make clear why you are choosing this particular organizational structure.
-6. **Risks:** What do you view as the biggest risks to the success of this project? Since you've identified them, how will you mitigate them?
+6. **Risks:** What do you view as the biggest risks to the success of this project? Since you've identified them, how will you mitigate them? How would you describe the ethical risks of a fully realized version of your project?
 7. **Additional Course Content:** What are some topics that we might cover in class that you think would be especially helpful for your project?
 
 Please do not just paste in these questions and answer them (you’re better than that). Instead, use them as guidelines to check for completeness as you draft a cohesive proposal document.
@@ -175,6 +176,9 @@ highlight a particularly crucial segment.
 Though the details will be different for each project, show off what your
 software can do! Screenshots and video are likely helpful. Include graphs or
 other data if appropriate.
+
+* **Software Impact Statement**
+Reflect on the ethical considerations you made throughout the design process, starting with project ideation and the priorities you set for your team. You should think of all of the stakeholders that might be impacted by your project and unintended consequences of the deployment of your software in real world scenarios. Discuss strategies for mitigating these issues.
 
 * **Project evolution/narrative**
 Tell an illustrative story about the process of creating your software,
