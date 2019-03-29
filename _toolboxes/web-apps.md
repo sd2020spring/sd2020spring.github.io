@@ -240,12 +240,18 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 
 ### Questions
 
-`questions.html` should be the first page the user see when you run `flask_app.py`. This page should ask the viewer to enter a name, age, and the name of their favorite SoftDes Ninja. To do this, you will need to create an html form. If you are unfamiliar with forms, check out [this resource](http://www.w3schools.com/html/html_forms.asp). For even more information, check [this](http://tinyurl.com/htmlforms) out.
+`questions.html` should be the first page the user see when you run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA. To do this, you will need to create an html form.
+
+>If you are unfamiliar with forms, check out [this >resource](http://www.w3schools.com/html/html_forms>.asp) and [this resource >](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
 
 
 ### Response
 
-`response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. [This resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm) is also a good place to learn more about sending the data from the html form. You will need to understand actions and methods in order to create a functioning submit button. For more examples see [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
+`response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. This means that you have to understand sending data from the html form as well as actions and methods in order to create a functioning submit button.
+
+>For information about sending data, actions, and methods, check out:
+>*[this resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm)
+>*[this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
 
 
 In order to render the information from the form, you need a way to access the form data. In order to access the inputs, you must use the request object which you can read about [here](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object).
@@ -256,25 +262,25 @@ from flask import Flask, render_template, request
 
 You can access the form data by the name you assigned the each input in the form html.
 
-#### `response.html`
+###### `response.html`
 
   ```html
   <p><input type=text username=username>
   ```
 
 
-#### `flask_app.py`
+###### `flask_app.py`
   ```python
   request.form['username']
   ```
 
 
 
-
-
 ### Error
 
 This page should be a simple error page that gets rendered if the user hasn't entered enough information. Make sure that you tell them why they are getting this error and provide a button that directions them back to the home page.
+
+>If your button isn't redirecting, try creating a form on the error page with a submit >button that reroutes to the questions page.
 
 
 
