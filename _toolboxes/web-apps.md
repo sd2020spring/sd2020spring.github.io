@@ -234,9 +234,11 @@ reading.
 
 If you're feeling a little lost, that's perfectly okay! Let's start by making files for all of the pages we need. In the templates folder create the following files:
 
-⋅⋅⋅`questions.html`
-⋅⋅⋅`response.html`
-⋅⋅⋅`error.html`
+`questions.html`
+
+`response.html`
+
+`error.html`
 
 
 ### Questions
@@ -245,8 +247,9 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 
 >If you are unfamiliar with forms, check out:
 >
-> ⋅⋅⋅[this resource](http://www.w3schools.com/html/html_forms>.asp)
-> ⋅⋅⋅[this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
+> [this resource](http://www.w3schools.com/html/html_forms>.asp)
+>
+> [this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
 
 
 ### Response
@@ -255,9 +258,9 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 
 >For information about sending data, actions, and methods, check out:
 >
-> ⋅⋅⋅[this resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm)
+> [this resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm)
 >
-> ⋅⋅⋅[this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
+> [this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
 
 
 In order to render the information from the form, you need a way to access the form data. In order to access the inputs, you must use the request object which you can read about [here](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object).
