@@ -10,9 +10,9 @@ due: 2019-05-07 12:00:00 -04:00
 proposal_survey_url: 
 spreadsheet_url: 
 parts:
-- name: Registration Survey
+- name: Registration Surveys
   due: 2019-03-29 17:00:00 -04:00
-  tag: registration-survey
+  tag: registration-surveys
 - name: Project Proposal
   due: 2019-04-03 10:50:00 -04:00
   tag: project-proposal
@@ -35,7 +35,7 @@ parts:
   due: 2019-05-07 12:00:00 -04:00
   tag: code-submission 
 type: index
-registration_survey_part: 0
+registration_surveys_part: 0
 proposal_part: 1
 arch_review_part: 2
 website_part: 4
@@ -87,7 +87,7 @@ Refer back to the answers you provided during the reflection and teaming surveys
 ## Project Activities / Deliverables
 
 ### Registration Surveys
-_Due {{ page.parts[page.registration_survey_part].due | date: site.part_due_date_format }}_
+_Due {{ page.parts[page.registration_surveys_part].due | date: site.part_due_date_format }}_
 
 In class we will have a guided activity for identifying your personal learning goals and generating project ideas.
 As part of this exercise you will fill out two surveys, which the faculty will use to help form final teams.
