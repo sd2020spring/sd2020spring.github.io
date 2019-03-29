@@ -233,16 +233,20 @@ reading.
 ## Suggestions
 
 If you're feeling a little lost, that's perfectly okay! Let's start by making files for all of the pages we need. In the templates folder create the following files:
-`questions.html`
-`response.html`
-`error.html`
+
+⋅⋅⋅`questions.html`
+⋅⋅⋅`response.html`
+⋅⋅⋅`error.html`
 
 
 ### Questions
 
 `questions.html` should be the first page the user see when you run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA. To do this, you will need to create an html form.
 
->If you are unfamiliar with forms, check out [this >resource](http://www.w3schools.com/html/html_forms>.asp) and [this resource >](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
+>If you are unfamiliar with forms, check out:
+>
+>⋅⋅⋅[this resource](http://www.w3schools.com/html/html_forms>.asp)
+>⋅⋅⋅[this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
 
 
 ### Response
@@ -250,8 +254,10 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 `response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. This means that you have to understand sending data from the html form as well as actions and methods in order to create a functioning submit button.
 
 >For information about sending data, actions, and methods, check out:
->*[this resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm)
->*[this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
+>
+>⋅⋅⋅[this resource](https://www.tutorialspoint.com/flask/flask_http_methods.htm)
+>
+>⋅⋅⋅[this resource](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
 
 
 In order to render the information from the form, you need a way to access the form data. In order to access the inputs, you must use the request object which you can read about [here](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object).
@@ -260,12 +266,12 @@ In order to render the information from the form, you need a way to access the f
 from flask import Flask, render_template, request
 ```
 
-You can access the form data by the name you assigned the each input in the form html.
+You can access the form data by the name you assigned each input in the form html. In this example, we used the name username to identify the data entered in the text field.
 
 ###### `response.html`
 
   ```html
-  <p><input type=text username=username>
+   <input type="text" name='username' />
   ```
 
 
@@ -278,18 +284,19 @@ You can access the form data by the name you assigned the each input in the form
 
 ### Error
 
-This page should be a simple error page that gets rendered if the user hasn't entered enough information. Make sure that you tell them why they are getting this error and provide a button that directions them back to the home page.
+This page should be a simple error page that gets rendered if the user hasn't entered enough information. Make sure that it informs the user why they are getting this error and provide a button that directions them back to the home page.
 
 >If your button isn't redirecting, try creating a form on the error page with a submit >button that reroutes to the questions page.
 
 
 
+## Words of Wisdom
+If you are still feeling stuck, the official Flask documentation is also very helpful and provides additional information about the topics introduced [here](http://flask.pocoo.org/docs/1.0/quickstart/).
+
+[This guide](https://www.tutorialspoint.com/flask/flask_quick_guide.htm) is also a good resource. It provides many examples that are easy to understand and can be applied to your app.
 
 
-## Tips and tricks
-If you are still feeling stuck, the official Flask documentation is very helpful and provides additional information about the topics introduced here. [Flask Documentation](http://flask.pocoo.org/docs/1.0/quickstart/)
-
-[This guide](https://www.tutorialspoint.com/flask/flask_quick_guide.htm) is also a good resource. It provides many examples that are easy to understand and can be applied to your app.   
+>There are also many more resources available to you which you are encouraged to take advantage of. We understand that a lot of the topics and concepts in this toolbox will be new to most of you. Web apps are a great tool to have in your toolbox for future projects and it is quite alright to still be confused. Don't hesitate to reach out for help from NINJAs and instructors. Good Luck!
 
 
 
