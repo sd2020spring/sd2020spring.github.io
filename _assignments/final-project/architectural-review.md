@@ -59,8 +59,7 @@ the review so they're not coming into the discussion "cold". You may (optionally
 the peer teams in your group a reasonable amount of "homework" (~5-10 minutes
 of reading) by posting on the discussion forum at least 24 hours before your technical review.
 
-The Preparation and Framing document must be posted as
-[Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/) to your team GitHub repository before the review takes
+The Preparation and Framing document must be submitted before the review takes
 place. You should also post any additional materials (e.g. slides, handouts, Google form) that you use during the technical review.
 
 ## Day of the Architectural Review
@@ -88,8 +87,7 @@ you are expected to contribute fully to each.
 
 The best advice in the world is useless if you don't do anything with it!
 After the technical review, you must prepare a Reflection and Synthesis
-document summarizing what you learned. This document must be posted as
-Markdown to your team GitHub repository before the next class after the
+document summarizing what you learned. This document must be submitted before the next class after the
 review.
 
 Your Reflection and Synthesis document should have (at least) the following
@@ -113,8 +111,7 @@ The architectural review is worth 15% of your total grade.
 
 ### Before: Preparation and Framing
 
-Your team must post a Preparation and Framing document as Markdown to your
-team GitHub repository before the review takes place.
+Your team must submit a Preparation and Framing document before the review takes place.
 
 **100%** |
 
@@ -185,8 +182,7 @@ beforehand.
 
 ### After: Reflection and Synthesis
 
-Your team must post a Reflection and Synthesis document as Markdown to your
-team GitHub repository before the next class after the review.
+Your team must submit a Reflection and Synthesis document before the next class after the review.
 
 **100%** |
 
