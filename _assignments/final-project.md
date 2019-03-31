@@ -103,7 +103,7 @@ Create your GitHub repository by accepting the [GitHub classroom assignment]({{ 
 You will be using this repository to turn in all of the project deliverables listed below.
 -->
 
-Create a document on your team's final project repo that answers the following questions. More detailed answers give us an ability to give you better feedback to start the project (or revise your proposal).
+Create a document that answers the following questions. More detailed answers give us an ability to give you better feedback to start the project (or revise your proposal).
 
 1. **The Big Idea:** What is the main idea of your project? What topics will you explore and what will you generate? What is your **minimum viable product**? What is a **stretch goal**?
 2. **Learning Goals:** What are your individual learning goals for this project?
