@@ -12,7 +12,7 @@ Flask is a lightweight and powerful web framework for Python. It's easy to
 learn and simple to use, allowing you to build your web app in a short amount
 of time.
 
-In this toolbox, you'll how to build a simple website, containing two static
+In this toolbox, you'll learn how to build a simple website, containing two static
 pages with a small amount of dynamic content. While Flask can be used for
 building complex, database-driven websites, starting with mostly static pages
 will be useful to introduce a workflow, which you can then generalize to make
@@ -44,6 +44,8 @@ something like `GET me the home page`. This server handles this request,
 sending back data (this can be in the form of HTML, JSON, XML, etc.), which is
 rendered by your browser.
 
+>For more on how the Internet works check out this [article](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) and [video](https://www.youtube.com/watch?v=7_LPdttKXPc)
+
 This is where Flask comes in - it allows you to create the logic to make a web
 server quickly in Python. You can write logic that will execute when a request
 is made for one of your routes (e.g. `www.mycoolwebsite.com/home`)
@@ -71,7 +73,6 @@ $ python hello.py
  * Running on http://127.0.0.1:5000/
 ```
 
-<p class="data-proofer-ignore" markdown="1">
 Now head over to <http://127.0.0.1:5000/>, and you should see your hello world
 greeting.
 </p>
@@ -94,9 +95,9 @@ To stop the server, hit `ctrl+c`.
 In our hello world, example, we had one route denoted by the decorator
 `@app.route('/')`. Again, this 'decorator' tells the Flask app that any
 incoming requests for `GET /` will run the function we called
-`hello_world()`.
+`index()`.
 
-Edit your  `hello.py` file so that it looks like the example below. We now have an index page which returns a string and a `'/hello'` route that returns a different string.
+Edit your  `hello.py` file so that it looks like the example below. The new block of code adds an another page. Now the `@app.route('/hello')` 'decorator' tells the app to run `hello()` when we get incoming requests for `GET /hello`
 
 ```python
 from flask import Flask
@@ -157,8 +158,9 @@ def hello():
     return render_template('index.html')
 ```
 
-Run `hello.py` once again and go to <http://127.0.0.1:5000/hello> and what appears on the page should resemble the html you just added.
+Run `hello.py` once again and go to <http://127.0.0.1:5000/hello>. What appears on the page should resemble the html you just added.
 
+To stop the server, hit `ctrl+c`.
 
 
 ## Rendering Pages with Variables
@@ -201,7 +203,7 @@ $ python hello.py
  * Running on http://127.0.0.1:5000/
 ```
 
-You can access the templated page by going to http://127.0.0.1:5000/<YOUR_NAME> and you should see your name being inserted into your page! In our route
+You can access the templated page by going to http://127.0.0.1:5000/hello/<YOUR_NAME> (example: http://127.0.0.1:5000/hello/Patrick) and you should see your name being inserted into your page! In our route
 `/hello/<name>`, we're allowing someone to make a request with an additional
 'name' parameter that can be anything. We can then use this `name` and render
 it in our HTML template `hello.html`. We use the `{___}` syntax to insert
@@ -243,16 +245,16 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 
 ### Questions
 
-`questions.html` should be the first page the user see when you run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA. To do this, you will need to create an html form.
+`questions.html` should be the first page the user see when they run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA as well as a submit button. To do this, you will need to create an HTML form.
 
->If you are unfamiliar with forms, check out [here](http://www.w3schools.com/html/html_forms>.asp) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
+>If you are unfamiliar with forms, check out [here](http://www.w3schools.com/html/html_forms>.asp) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form) for examples
 
 
 ### Response
 
-`response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. This means that you have to understand sending data from the html form as well as actions and methods in order to create a functioning submit button.
+`response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. This means that you have to understand sending data from the HTML form as well as actions and methods in order to create a functioning submit button.
 
->For information about sending data, actions, and methods, check out [here](https://www.tutorialspoint.com/flask/flask_http_methods.htm) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data).
+>For information about sending data, actions, and methods, check out [here](https://www.tutorialspoint.com/flask/flask_http_methods.htm) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data) for further explanations
 
 
 In order to render the information from the form, you need a way to access the form data. In order to access the inputs, you must use the request object which you can read about [here](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object).
@@ -261,7 +263,7 @@ In order to render the information from the form, you need a way to access the f
 from flask import Flask, render_template, request
 ```
 
-You can access the form data by the name you assigned each input in the form html. In this example, we used the name username to identify the data entered in the text field.
+You can access the form data by the name you assigned each input in the form html. In this example, we used the name `username` to identify the data entered in the text field.
 
 ###### `response.html`
 
@@ -279,9 +281,9 @@ You can access the form data by the name you assigned each input in the form htm
 
 ### Error
 
-This page should be a simple error page that gets rendered if the user hasn't entered enough information. Make sure that it informs the user why they are getting this error and provide a button that directions them back to the home page.
+This page should rendered a message that informs the user why they are getting this error and provide a button that directions them back to the questions page so they can try again.
 
->If your button isn't redirecting, try creating a form on the error page with a submit >button that reroutes to the questions page.
+>If your button isn't redirecting, try creating a form on the error page with a submit button that reroutes to the questions page. This way an action can be performed when the button is clicked. 
 
 
 
