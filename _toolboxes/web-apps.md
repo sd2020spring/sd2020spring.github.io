@@ -12,7 +12,7 @@ Flask is a lightweight and powerful web framework for Python. It's easy to
 learn and simple to use, allowing you to build your web app in a short amount
 of time.
 
-In this toolbox, you'll how to build a simple website, containing two static
+In this toolbox, you'll learn how to build a simple website, containing two static
 pages with a small amount of dynamic content. While Flask can be used for
 building complex, database-driven websites, starting with mostly static pages
 will be useful to introduce a workflow, which you can then generalize to make
@@ -27,7 +27,7 @@ In this toolbox, you'll be learning Flask. To do this, you'll first need to
 install Flask. Run the following command:
 
 ```bash
-$ conda install Flask
+$ pip install Flask
 ```
 
 This toolbox exercise was developed by Patrick Huston.
@@ -36,7 +36,7 @@ This toolbox exercise was developed by Patrick Huston.
 
 In the introduction, we defined Flask as a "web framework", but what does that
 actually mean? Let's dig deeper. Before this, let's develop a better
-understanding of how the internet works.
+understanding of how the Internet works.
 
 When you open up a web page in your browser (e.g. Chrome, Firefox, etc.), it
 makes an HTTP request to a server somewhere in the world. This could be
@@ -44,14 +44,15 @@ something like `GET me the home page`. This server handles this request,
 sending back data (this can be in the form of HTML, JSON, XML, etc.), which is
 rendered by your browser.
 
+>For more on how the Internet works check out this [article](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work) and [video](https://www.youtube.com/watch?v=7_LPdttKXPc)
+
 This is where Flask comes in - it allows you to create the logic to make a web
 server quickly in Python. You can write logic that will execute when a request
 is made for one of your routes (e.g. `www.mycoolwebsite.com/home`)
 
 ## Hello World in Flask
 
-Let's write some Flask. A simple Hello World application written in Flask can
-be as simple as this:
+Let's write some Flask. In the starter code, there is a file named `hello.py` which is a very simple Hello World application written in Flask:
 
 ```python
 from flask import Flask
@@ -65,16 +66,13 @@ if __name__ == '__main__':
     app.run()
 ```
 
-Write this, save it as something like `hello.py`, and run it in terminal. Make
-sure to not call your application `flask.py` because this would conflict with
-Flask itself.
+Run `hello.py` in the terminal.
 
 ```bash
 $ python hello.py
  * Running on http://127.0.0.1:5000/
 ```
 
-<p class="data-proofer-ignore" markdown="1">
 Now head over to <http://127.0.0.1:5000/>, and you should see your hello world
 greeting.
 </p>
@@ -97,11 +95,14 @@ To stop the server, hit `ctrl+c`.
 In our hello world, example, we had one route denoted by the decorator
 `@app.route('/')`. Again, this 'decorator' tells the Flask app that any
 incoming requests for `GET /` will run the function we called
-`hello_world()`.
+`index()`.
 
-Here are a couple more quick examples -
+Edit your  `hello.py` file so that it looks like the example below. The new block of code adds an another page. Now the `@app.route('/hello')` 'decorator' tells the app to run `hello()` when we get incoming requests for `GET /hello`
 
 ```python
+from flask import Flask
+app = Flask(__name__)
+
 @app.route('/')
 def index():
     return 'Index Page'
@@ -109,9 +110,13 @@ def index():
 @app.route('/hello')
 def hello():
     return 'Hello World'
+
+if __name__ == '__main__':
+    app.run()
 ```
 
-In this example, if you now navigate to <http://127.0.0.1:5000/hello>, you should see "Hello World" returned since the `'/hello'` route was defined to do so.
+
+In this example, if you now navigate to <http://127.0.0.1:5000> you should see "Index Page" and if you then visit  <http://127.0.0.1:5000/hello>, you should see "Hello World" returned since the `'/hello'` route was defined to do so.
 
 Pretty simple, right? What happens when we want to do something _useful_ \-
 *e.g.* display something other than text?
@@ -123,8 +128,9 @@ create web pages. In addition to sending back strings, Flask can send back
 HTML files to the client, which will be rendered in the browser. Let's get to
 work creating a basic HTML document.
 
-Let's start my creating a new directory called `templates`, and saving a new document as
-`index.html` there:
+> If you are new to HTML or if you need a refresher, [this website](https://www.w3schools.com/html/html_intro.asp) is very helpful and provides many examples.
+
+Let's start by creating a new directory called `templates` and creating a new file within it called `index.html` along with the following code..
 
 ```html
 <!DOCTYPE html>
@@ -142,15 +148,19 @@ Let's start my creating a new directory called `templates`, and saving a new doc
 ```
 
 
-Now let's serve this HTML page. This can be down with the `render_template()` method that is provided by flask. Let's modify our `'/hello'` route to return our HTML:
+Now let's serve this HTML page. This can be done with the `render_template()` method that is provided by flask. At the top of `hello.py` make sure you add `render_template` to the import statement so it looks like the updated one below. Let's modify our `'/hello'` route to return our HTML:
 
 ```python
-from flask import render_template
+from flask import Flask, render_template
 
 @app.route('/hello')
 def hello():
     return render_template('index.html')
 ```
+
+Run `hello.py` once again and go to <http://127.0.0.1:5000/hello>. What appears on the page should resemble the html you just added.
+
+To stop the server, hit `ctrl+c`.
 
 
 ## Rendering Pages with Variables
@@ -163,14 +173,18 @@ to the template engine as keyword arguments. Here’s a simple example of how to
 render a template:
 
 ```python
-from flask import render_template
+from flask import Flask, render_template
+
+@app.route('/')
+def index():
+    return 'Index Page'
 
 @app.route('/hello/<name>')
 def helloTemplate(name=None):
     return render_template('hello.html', name=name)
 ```
 
-And here is an example template (`hello.html`) that will work with the above snippet:
+Then change `hello.html` so that it renders with the name that gets passed through.
 
 ```html
 <!doctype html>
@@ -182,7 +196,14 @@ And here is an example template (`hello.html`) that will work with the above sni
 {% endif %}
 ```
 
-You may have noticed something really cool that happened here. In our route
+And that's it! Again, following the instructions
+
+```bash
+$ python hello.py
+ * Running on http://127.0.0.1:5000/
+```
+
+You can access the templated page by going to http://127.0.0.1:5000/hello/<YOUR_NAME> (example: http://127.0.0.1:5000/hello/Patrick) and you should see your name being inserted into your page! In our route
 `/hello/<name>`, we're allowing someone to make a request with an additional
 'name' parameter that can be anything. We can then use this `name` and render
 it in our HTML template `hello.html`. We use the `{___}` syntax to insert
@@ -191,62 +212,90 @@ logic directly into our HTML page – see `{% raw %}{% if name %}{% endraw %}`. 
 years about all of the power of Jinja templating, but I'll leave that joy to
 this [wonderful article](http://jinja.pocoo.org/docs/dev/templates/).
 
-<!-- Getting back to our simple Hello World app, let's add in a route to display
-our `index.html` we created above.
 
-```python
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return render_template('index.html')
-
-if __name__ == '__main__':
-    app.run()
-``` -->
-
-And that's it! Again, following the instructions
-
-```bash
-$ python hello.py
- * Running on http://127.0.0.1:5000/
-```
-
-to run the application, and head over to <http://127.0.0.1:5000/>, and you
-should see your hello world greeting. It might not look very different, but
-you're now working with a much more powerful format of representing
-information through HTML. 
-
-You can access the templated page by going to <http://127.0.0.1:5000/<YOUR_NAME>> and you should see your name being inserted into your page!
 
 ## Build your own app: getting input from the user
 
 What use is a web application if you can't get any data back from the user?
 Let's set up a simple app. Here are our end specifications:
 
+**Start creating your app in the flask_app.py file in the starter code**
+
 1. Upon visiting the index page at <http://127.0.0.1:5000/>, the user will be greeted by a page that says hello, and includes an input form that requests their name, age, and favorite SoftDes Ninja.
 2. Upon clicking the 'Submit' button, the data from the form will be sent via a POST request to the Flask backend at the route `POST /login`.
 3. The Flask backend will handle the request to `POST /login` and perform some simple validation on the user input - simply check to see if they exist.
-4. If all the information is present, the app will render a 'profile' page for the user - presenting their name and age. Regardless of their input for final question, and regardless of whether Patrick is a SofDes Ninja, the app will display `Patrick Huston`
+4. If all the information is present, the app will render a page for the user - presenting their name and age. Regardless of their input for final question, and regardless of whether Patrick is a SofDes Ninja, the app will display `Patrick Huston`
 5. If all the information is not present, the app will render a simple error page, which will include some indication that they didn't include all the required information, in addition to a button that will redirect the user back to the home page.
 
 It will be up to you to make this happen. If you feel confident in your
 ability to implement this, go for it! If you'd like more scaffolding, continue
 reading.
 
-## Tips and tricks
 
-To complete this exercise, the official Flask documentation will get you
-pretty far. There is the [full
-documentation](http://flask.pocoo.org/docs/0.10/#user-s-guide) and the
-[quickstart guide](http://flask.pocoo.org/docs/0.10/quickstart/), both of
-should be pretty helpful.
+## Suggestions
 
-1. _HTML Forms_ To make forms in HTML, check out [this resource](http://www.w3schools.com/html/html_forms.asp). For even more information, check [this](http://tinyurl.com/htmlforms) out.
-2. _Sending Data From Your HTML Form_: You'll need to figure out how write HTML form ["actions"](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data) for Flask, HTML ["methods"](https://www.tutorialspoint.com/flask/flask_http_methods.htm) for Flask, as well as how to write a "submit" button type for HTML forms.
-3. _Handling POST Requests_: To learn more about handling post requests in Flask, check this resource from the [Flask documentation](http://flask.pocoo.org/docs/1.0/quickstart/#http-methods) out.
-4. \+ 5. _Accessing the Form Data_: To access the form data, check out [this documentation](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) on using the Flask `request` utility.
+If you're feeling a little lost, that's perfectly okay! Let's start by making files for all of the pages we need. In the templates folder create the following files:
+
+`questions.html`
+
+`response.html`
+
+`error.html`
+
+
+### Questions
+
+`questions.html` should be the first page the user see when they run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA as well as a submit button. To do this, you will need to create an HTML form.
+
+>If you are unfamiliar with forms, check out [here](http://www.w3schools.com/html/html_forms>.asp) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form) for examples
+
+
+### Response
+
+`response.html` should display the information the user entered. This is where the rendering pages with variables section will come in handy. This means that you have to understand sending data from the HTML form as well as actions and methods in order to create a functioning submit button.
+
+>For information about sending data, actions, and methods, check out [here](https://www.tutorialspoint.com/flask/flask_http_methods.htm) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data) for further explanations
+
+
+In order to render the information from the form, you need a way to access the form data. In order to access the inputs, you must use the request object which you can read about [here](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object).
+
+```python
+from flask import Flask, render_template, request
+```
+
+You can access the form data by the name you assigned each input in the form html. In this example, we used the name `username` to identify the data entered in the text field.
+
+###### `response.html`
+
+  ```html
+   <input type="text" name='username' />
+  ```
+
+
+###### `flask_app.py`
+  ```python
+  request.form['username']
+  ```
+
+
+
+### Error
+
+This page should rendered a message that informs the user why they are getting this error and provide a button that directions them back to the questions page so they can try again.
+
+>If your button isn't redirecting, try creating a form on the error page with a submit button that reroutes to the questions page. This way an action can be performed when the button is clicked. 
+
+
+
+## Words of Wisdom
+If you are still feeling stuck, the official Flask documentation is also very helpful and provides additional information about the topics introduced in this toolbox. [HERE](http://flask.pocoo.org/docs/1.0/quickstart/).
+
+[This guide](https://www.tutorialspoint.com/flask/flask_quick_guide.htm) is also a good resource. It provides many examples that are easy to understand and can be applied to your app.
+
+
+There are also many more resources available to you which you are encouraged to take advantage of. We understand that a lot of the topics and concepts in this toolbox will be new to most of you. Web apps are a great tool to have in your toolbox for future projects and it is quite alright to still be confused. Don't hesitate to reach out for help from NINJAs and instructors. Good Luck!
+
+
 
 ## What to turn in
 
@@ -259,7 +308,6 @@ Push the web app you developed in the previous section to GitHub.
 3. **But HTML is so ugly!** HTML alone *is* very ugly. That's why we use CSS (Cascading Style Sheets) to add some extra flair and style to our HTML. You can change pretty much anything about HTML - colors, shapes, sizes, placement, etc. with CSS rules. It's also pretty simple to write. Check [this resource](http://www.w3schools.com/css/css_intro.asp) out to learn more about CSS.
 4. **What about making my website dynamic?** SoftDes may be a class in Python, but we can venture out a little and use some [jQuery](http://www.w3schools.com/jquery/jquery_intro.asp). jQuery might seem scary, but you use it in a way similar to adding/linking CSS styling to your HTML. You write scripts in JavaScript (which isn't too difficult), which can allow you to add beautiful responsive and dynamic content to your web app. You can also use a Javascript frontend framework like [React](https://reactjs.org/) or [Redux](https://redux.js.org/) to do advanced state based pages. It's pretty cool, but quite advanced!
 5. You can also use [D3](https://d3js.org) to display graphical data in a web page.
-
 
 
 ## (Optional) Going Beyond - Web Deployment
