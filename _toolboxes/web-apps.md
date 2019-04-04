@@ -30,7 +30,7 @@ install Flask. Run the following command:
 $ pip install Flask
 ```
 
-This toolbox exercise was developed by Patrick Huston.
+This toolbox exercise was developed by Patrick Huston and Anna Griffin.
 
 ## What is Flask, really?
 
