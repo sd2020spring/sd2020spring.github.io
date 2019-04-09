@@ -186,6 +186,7 @@ def helloTemplate(name=None):
 
 Then change `hello.html` so that it renders with the name that gets passed through.
 
+{% raw %}
 ```html
 <!doctype html>
 <title>Hello from Flask</title>
@@ -195,6 +196,7 @@ Then change `hello.html` so that it renders with the name that gets passed throu
   <h1>Hello, World!</h1>
 {% endif %}
 ```
+{% endraw %}
 
 And that's it! Again, following the instructions
 
@@ -210,7 +212,7 @@ it in our HTML template `hello.html`. We use the `{___}` syntax to insert
 outside variables into the template. Additionally, we can insert Pythonic flow
 logic directly into our HTML page – see `{% raw %}{% if name %}{% endraw %}`. We could go on for
 years about all of the power of Jinja templating, but I'll leave that joy to
-this [wonderful article](http://jinja.pocoo.org/docs/dev/templates/).
+this [wonderful article](http://jinja.pocoo.org/docs/dev/templates/)
 
 
 
@@ -247,7 +249,7 @@ If you're feeling a little lost, that's perfectly okay! Let's start by making fi
 
 `questions.html` should be the first page the user see when they run `flask_app.py`. This page should have a text field for the user's name, age, and favorite NINJA as well as a submit button. To do this, you will need to create an HTML form.
 
->If you are unfamiliar with forms, check out [here](http://www.w3schools.com/html/html_forms>.asp) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form) for examples
+>If you are unfamiliar with forms, check out [here](http://www.w3schools.com/html/html_forms.asp) and [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form) for examples
 
 
 ### Response
