@@ -98,10 +98,8 @@ _Due {{ page.parts[page.proposal_part].due | date: site.part_due_date_format }}_
 
 **The project proposal is worth 10% of the project grade ([rubric]({% link _assignments/final-project/project-proposal-rubric.md %})).**
 
-<!--
-Create your GitHub repository by accepting the [GitHub classroom assignment]({{ site.data.github.finalproject_invite }}) and adding all team members to the repository.
-You will be using this repository to turn in all of the project deliverables listed below.
--->
+Now that you have a team, create your GitHub repository by accepting the [GitHub classroom assignment]({{ site.data.github.finalproject_invite }}) and adding all team members to the repository.
+You will be using this repository for project code, but the proposal and other written assignments will be submitted via Canvas.
 
 Create a document that answers the following questions. More detailed answers give us an ability to give you better feedback to start the project (or revise your proposal).
 
