@@ -110,6 +110,96 @@ Also see [Git recipes]({% link pages/recipes.md %}#git-recipes) and [Reading Jou
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * GitHub's [Markdown Cheatsheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf) (PDF)
 
+## Media
+
+### Screen Capture
+
+One of the most impactful ways to show your work in action is to... show your work in action!
+
+For **still images**, there is a Ubuntu built-in tool called [Screenshot](https://help.ubuntu.com/lts/ubuntu-help/screen-shot-record.html) that will allow you to capture the entire screen, one window, or a region you select.
+
+There are many options to **record video of your screen**, but for Ubuntu we recommend you start by trying [Peek](https://github.com/phw/peek). To install:
+
+```
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek
+```
+
+Used sparingly this can be a powerful way to quickly show what you've created, but too much can be overwhelming.
+
+![]({% link images/notes/resources/Peek_usage.gif %})
+
+You have two options for recording format:
+ - **GIF** - good for short interactions, can be embedded directly in a webpage
+ - **MP4** - good for editing together into a longer video, can be uploaded to video sharing services and linked from your webpage
+
+If you saved as a GIF and you need an MP4 to work with video editors like Pitivi, you can use an
+[online converter](https://ezgif.com/video-to-gif)
+or convert it using ```ffmpeg```:
+
+```bash
+ffmpeg -i foo.gif foo.mp4
+```
+
+
+_Troubleshooting:_ If you get the following error message, there is a problem with peek trying to utilize ffmpeg from inside Anaconda (as opposed to the one installed in the system path).
+
+```
+Using screen recorder backend ffmpeg
+Error: Child process exited with code 1
+Recording canceled: Command "ffmpeg -f x11grab -show_region 0 -framerate 10 -video_size 498x256 -i :0+941,643 -filter:v scale=iw/1:-1 -codec:v libvpx-vp9 -lossless 1 -r 10 -y /home/pruvolo/.cache/peek/peek7WRLIZ.webm" failed with status 256 (received signal 0).
+
+Output:
+ffmpeg version 3.4 Copyright (c) 2000-2017 the FFmpeg developers  built with gcc 7.2.0 (crosstool-NG 8a21ab48)  configuration: --prefix=/home/pruvolo/anaconda3 --disable-doc --enable-shared --extra-cflags='-fPIC -I/home/pruvolo/anaconda3/include' --extra-cxxflags='=-fPIC' --extra-libs='-L/home/pruvolo/anaconda3/lib -lz' --enable-pic --disable-static --disable-gpl --disable-nonfree --disable-openssl --enable-libvpx --cc=/home/pruvolo/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc --cxx=/home/pruvolo/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++ --enable-libopus  libavutil      55. 78.100 / 55. 78.100  libavcodec     57.107.100 / 57.107.100  libavformat    57. 83.100 / 57. 83.100  libavdevice    57. 10.100 / 57. 10.100  libavfilter     6.107.100 /  6.107.100  libswscale      4.  8.100 /  4.  8.100  libswresample   2.  9.100 /  2.  9.100Unrecognized option 'show_region'.Error splitting the argument list: Option not found
+```
+
+To fix this, simply run this command from your terminal.
+``` bash
+PATH=/usr/bin:$PATH peek
+```
+
+### Demo Videos
+
+As part of your final project, your team will create a short demo video.
+There are two main routes you can take to create this presentation:
+ - video with audio narration
+ - "silent film" with title cards and/or text overlay explanations
+
+#### Silent film option
+
+From your storyboard, combine a series of still images and/or short GIF clips into a longer animated GIF. There are many tools you can use to do the stitching, but we recommend [EZGIF](https://ezgif.com/maker), which can both create and edit GIFs including overlaying text. 
+
+Note that your "silent film" doesn't need to remain silent. You can create an animation using this method, then convert to MP4 video and overlay an audio track following the directions below.
+
+
+#### Video option
+
+There are also a huge variety of options for video production, but for this class we recommend the instructions for creating an [Ubuntu screen cast](https://wiki.ubuntu.com/ScreencastTeam/RecordingScreencasts) (you can ignore the part about creating a virtual machine) using [Pitivi](http://www.pitivi.org/). Note that you can also use this flow to create a "silent film" with a bit more control.
+
+#### Recording audio
+
+Since it's difficult to get a demo and your narration right at the same time, we recommend that you first create your video, then record an audio voiceover using [Audacity](https://www.audacityteam.org/), and finally compose the two using Pitivi.
+
+Find a quiet place to record your audio. We also have quality studio microphones you can check out rather than using your laptop's microphone.
+
+If you'd like to include a "talking head" video clip of your team members, you can record it using the built-in Ubuntu webcam app called Cheese.
+
+If you choose to use background music (by no means necessary), make sure you select options which are [licensed appropriately](http://freemusicarchive.org/curator/Video/).
+
+
+#### Generating title slides and text overlays
+
+Regardless of what implementation technology you use, you will likely want title cards, transitions, and credits (don't forget to add your names and give credit to resources you use). There are many options to generate these still images, including:
+
+ - Use a photo editor to add text overlays to screenshots
+ - Use presentation software (e.g. Google Slides) and download the slide as an image
+ - Screenshot from a presentation
+ - Use magic markers and scan it in
+ - For GIFs, you can [add subtitles with EZGIF](https://ezgif.com/add-text)
+
+
+
 ## Jupyter
 
 * [How to use Jupyter Notebooks](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook##UseJupyter)
