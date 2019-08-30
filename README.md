@@ -1,7 +1,7 @@
-# Spring 2019 SoftDes Web Site
-[![Build Status](https://travis-ci.org/sd19spring/sd19spring.github.io.svg?branch=master)](https://travis-ci.org/sd19spring/sd19spring.github.io)
+# Fall 2019 SoftDes Web Site
+[![Build Status](https://travis-ci.org/sd19fall/sd19fall.github.io.svg?branch=master)](https://travis-ci.org/sd19fall/sd19fall.github.io)
 
-Course site for Spring 2019 Software Design @ Olin College.
+Course site for Fall 2019 Software Design @ Olin College.
 
 To build and deploy locally
 ```
