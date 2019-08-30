@@ -1,6 +1,6 @@
 ---
 title: Set Up Your Development Environment
-date: 2019-01-25 10:50:00 -04:00
+date: 2019-08-30 13:30:00 -04:00
 ---
 
 {% include toc %}
@@ -93,89 +93,7 @@ If Jupyter was not installed automatically with Anaconda, you should run
 
     $ conda install jupyter
 
-## Step 4: Get Started with Git
-
-We will make heavy use of Git (and GitHub in this class). Haven’t heard of Git? That’s totally fine (and totally expected). Before we do some course-specific Git stuff, take some time to read [Chapter 1](https://github.com/AllenDowney/amgit/blob/master/en/01-introduction/01-chapter1.markdown) of Allen’s excellent online book called AmGit.
-
-### Install Git
-
-If you just installed Ubuntu, you will need to install Git using the instructions below.  If you had an existing Ubuntu installation, Git may already be installed on your system. Enter `git --version` into a terminal window to test. If this prints something like `git version 2.17.1`, you are good to go. (The exact number doesn't matter, so long as it's 2.something.)
-
-Otherwise, you can install it from the terminal by running the command
-```bash
-$ sudo apt-get install git
-```
-
-Set up your Git identity by following the instructions in [Chapter 1](https://github.com/AllenDowney/amgit/blob/master/en/01-introduction/01-chapter1.markdown#first-time-git-setup). At minimum, you must set your name and email before you can commit anything:
-
-```bash
-$ git config --global user.name "John Doe"
-$ git config --global user.email jondoe@example.com
-```
-
-{::comment}
-If you are a macOS user and you are using [homebrew](https://brew.sh), you can run `brew install git` instead of download  git from the download page. If you don't know what this means, use the download page.
-{:/comment}
-
-### Create a GitHub Account
-
-Now that you have the basic idea of what version control is and what it is good for, you are going to take the next step and sign up for an account on a website called [GitHub](https://github.com/). The second chapter of Allen’s book has a nice description of GitHub, and how to make an account.
-
-> GitHub is a web-based hosting service for Git users. In general a hosting service provides storage space on remote servers, network access, and tools and applications for interacting with stored data. GitHub provides storage for Git repositories and tools for interacting with them.
->
-> There are other hosting services for Git, but GitHub is one of the most popular. It is so popular that people sometimes say “GitHub” when they mean “Git”, so just to be clear:
->
-> * Git is an application that runs on your computer and helps you manage repositories.
-> * You can use Git to manage repos stored on your own computer or on any computer configured as a Git server.
-> * Anybody can set up and run a Git server. A company that runs Git servers professionally is a Git hosting service.
-> * GitHub is one of many Git hosting services.
->
-> Ok, go to [https://github.com](https://github.com/). If you already have an account, log in. Otherwise, you will have to create one.
->
-> You can choose any available username you like, but there are a few things you might want to think about:
->
-> 1. Working on GitHub involves interacting with other people. They will see your username, so choose wisely.
-> 2. Some people, like `AllenDowney`, use their full names, but the most common schema seems to be one-word lower-case usernames. For example, Scott Chacon is `schacon`.
-> 3. If you want to be anonymous, you can choose a username unrelated to your real name; however,
-> 4. Many software engineers use GitHub as part of their professional portfolio. If a potential employer wants to check out your skills, they might look at your GitHub repositories.
->
-> It is probably a good idea to think of everything you do on GitHub as part of your public professional reputation.
-
-### Get the Reading Journal
-
-<!--
-> **Note:** GitHub Classroom is not yet active for this class, so for the first day follow the instructions on [Assignment 1](/assignments/assignment-1) instead of what's below. We will switch back to this method once the Classroom is active.
--->
-
-We will be using GitHub for a number of use cases in the class.
-
-* Turning in pre-class reading exercises
-* Turning in mini-projects
-* Distributing materials for in-class exercises
-
-Since there’s reading due next class, you will need to perform the steps below to setup your personal `ReadingJournal` repository.
-
-1. Click on the invitation link <{{ site.data.github.reading_journal_invite }}>
-2. Click the green button “Accept this assignment”.
-3. Follow the remaining instructions until you get to your repository page. It will looks something like <https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname>, except with your GitHub user id instead of `myname`.
-4. Clone the repository to your computer by typing the following into your Terminal program. Replace `myname` with your GitHub user id.
-
-```bash
-$ git clone https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname.git ReadingJournal
-```
-
-Now you have a copy of the ReadingJournal folder (directory) on your drive. Use the terminal{::comment}, macOS Finder, Windows Explorer,{:/comment} or Ubuntu File Manager to verify that it is present.
-
-Next, you can fire up Jupyter notebook and load the reading journal for day X.
-
-```bash
-$ cd ReadingJournal
-$ jupyter notebook reading-journal-01.ipynb
-```
-
-If all goes well, this should bring up a web-browser with the reading questions.
-
-## Step 5. Install Atom
+## Step 4. Install Atom
 
 1. [Download and install](http://flight-manual.atom.io/getting-started/sections/installing-atom/) the [Atom text editor](https://atom.io) onto your computer.
 2. Follow the [Atom Basics](http://flight-manual.atom.io/getting-started/sections/atom-basics/) instructions to create a text file and save it.
@@ -197,3 +115,29 @@ Then do the following:
   * Click Settings.
   * In the “Path to python directory” setting, paste the path from 1., *without* the final `python.exe`: for example, `C:\Users\MYNAME\AppData\Local\Continuum\Anaconda3\python.exe`
 {:/comment}
+
+## Step 5: Create a GitHub Account
+
+Git is a version control system that we will use heavily in this class. We'll talk more about git next time, but for now we'd like you to sign up for an account on [GitHub](https://github.com/) (if you don't have one already).
+From Allen Downey's [online git book](https://github.com/AllenDowney/amgit/blob/master/en/02-git-basics/01-chapter2.markdown#sign-up-for-github):
+
+> GitHub is a web-based hosting service for Git users. In general a hosting service provides storage space on remote servers, network access, and tools and applications for interacting with stored data. GitHub provides storage for Git repositories and tools for interacting with them.
+>
+> There are other hosting services for Git, but GitHub is one of the most popular. It is so popular that people sometimes say “GitHub” when they mean “Git”, so just to be clear:
+>
+> * Git is an application that runs on your computer and helps you manage repositories.
+> * You can use Git to manage repos stored on your own computer or on any computer configured as a Git server.
+> * Anybody can set up and run a Git server. A company that runs Git servers professionally is a Git hosting service.
+> * GitHub is one of many Git hosting services.
+>
+> Ok, go to [https://github.com](https://github.com/). If you already have an account, log in. Otherwise, you will have to create one.
+>
+> You can choose any available username you like, but there are a few things you might want to think about:
+>
+> 1. Working on GitHub involves interacting with other people. They will see your username, so choose wisely.
+> 2. Some people, like `AllenDowney`, use their full names, but the most common schema seems to be one-word lower-case usernames. For example, Scott Chacon is `schacon`.
+> 3. If you want to be anonymous, you can choose a username unrelated to your real name; however,
+> 4. Many software engineers use GitHub as part of their professional portfolio. If a potential employer wants to check out your skills, they might look at your GitHub repositories.
+>
+> It is probably a good idea to think of everything you do on GitHub as part of your public professional reputation.
+
