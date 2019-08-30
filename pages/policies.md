@@ -14,11 +14,23 @@ If you have a documented disability (or think you may have a disability) and, as
 
 ## Course Communications
 
-We will use Canvas as our communications channel for this class. You responsible for course announcements that are posted to Canvas.
+We will use Canvas as our communications channel (announcements and discussion forum) for this class.
+Please subscribe to notifications or check regularly so you don't miss any important updates.
+
+Materials used in lectures and the topics discussed each day can be found on this class website, along with the instructions for in-class activities.
+
 
 ## Course Components
 
-Your evaluated work in this course will include:
+In this class, you will learn from (at least) the following activities:
+ - Pre-class reading preparation
+ - In-class lectures and activities
+ - Mini-Projects
+ - Project Toolboxes
+ - Final Project
+
+Each of these will be described in more detail below, as well as on the individual assignment pages.
+
 
 | Activity                          | Approx Weight |
 | --------------------------------- | ------------- |
@@ -28,8 +40,6 @@ Your evaluated work in this course will include:
 | Final Project                     | 30%           |
 | Participation and Professionalism | 5%            |
 
-Each will be described in more detail below, as well as on the individual
-assignment pages.
 
 ### Active Reading
 
@@ -47,7 +57,7 @@ Reading journals are primarily developmental, so they are not evaluated based on
 
 You are not expected to spend more than eight hours per week outside of class on all classwork – reading, reading journals, mini-projects, toolboxes, final project. With the exception of the first assignment, you should not spend more time than five hours on a reading journal. You should not spend more than ninety minutes on an assignment without asking an instructor, electronically or by making use of office hours, for help. (Ask for help sooner if you are “stuck”. Banging your head against a wall is not a good use of your time.)
 
-Reading journals must be submitted by pushing to GitHub before 9am on the day of the class in which they are due to be considered for credit. We will review work from journals in class on that day, so it is not practical to get behind. You are allowed one "free pass" missed submission with no questions asked.
+Reading journals must be submitted by pushing to GitHub before 9am on the day of the class in which they are due to be considered for credit. This is because reading journals are preparation for the day's activity and we will review them in class on that day, so it is not practical to get behind. You are allowed one "free pass" missed submission with no questions asked. If you find yourself falling behind or spending excessive time on reading journals, please reach out to course staff.
 
 ### Mini-Projects
 
@@ -78,22 +88,52 @@ During the second half of the semester you will work will a small team on a proj
 
 ### Participation and Professionalism
 
-We will do lots of fun and useful things during class time. You should plan to be there!
+As students, you share responsibility for creating and maintaining a classroom atmosphere that is conducive to everyone's learning and enjoyment. We hope you will think about how your participation contributes to the learning environment.
 
-As students, you have some responsibility for creating and maintaining a classroom atmosphere that is conducive to everyone's learning and enjoyment. We hope you will think about how your participation contributes to the learning environment.
+#### Our role
+The teaching team strives to:
 
-Some things you can do to help:
+1. Be professional and respectful
+1. Welcome different ways of understanding, knowing and being
+1. Use class time effectively
+1. Actively solicit and respond to feedback
+1. Adhere to our shared agreement around grading
+1. Trust that you know yourself and your needs, interests, and values better than we do
+1. Plan fun and useful learning activities during class time.
 
-1. Come to class on time! We will do our best to use class time effectively. Late arrivals are disruptive.
-2. Come to class prepared. Make sure you have always completed your reading journal.
-3. Try not to fall behind. If we are all working on the same stuff at the same time, everything works better.
-4. Be active in discussions in class and online, both asking and answering questions. Complete all class surveys on time.
-5. Take care of your brain. Eat well, sleep well, get some exercises. Come to class ready to work.
-6. Be professional.
-7. Be respectful.
-8. Be generous with your ideas and your time. Help each other.
-9. Be reflective. Think about what's working and what's not, and take responsibility for making the class work for you.
-10. Have fun!
+
+#### Your role
+We ask you to:
+
+1. Be professional and respectful
+1. Come to class on time and prepared (e.g. completed reading journal)
+1. Be generous with your ideas and your time. Help each other.
+1. Try not to fall behind. If we are all working on the same stuff at the same time, everything works better. Reach out for help when you need it.
+1. Be reflective. Think about what's working and what's not, and take responsibility for making the class work for you.
+1. Be active in discussions in class and online, both asking and answering questions. Complete all class surveys on time.
+1. Take care of your brain. Eat well, sleep well, get some exercises. Come to class ready to work.
+1. Have fun!
+
+## Seeking Help
+
+If at any point in the class you find yourself falling behind or struggling, please talk to an instructor or a NINJA. The worst thing you can do is to suffer in silence.
+
+We trust that you are working to the best of your ability and striving to honor your participation pledge. If you struggle, we want to help. There are resources available for all kinds of problems:
+
+- NINJA: For help with content, during scheduled hours or by appointment
+- Professors: For help and more detailed explanations during office hours, or office hours by requests
+- Your peers: Many students have great success working in a group
+- Resources Page: The sidebar has a resources page with many online resources for code help that may save you a trip to a NINJA or be useful tools for your understanding
+- Peer Tutors: These are other students who will privately tutor you if you need extra help with course materials. It's best to ask for a peer tutor right away if you are having problems keeping up while using other resources.
+- ARCs: These students are trained to help you not with course material, but with life problems that are standing in the way of your work. They can assist in many ways such as:
+    - Helping you make a schedule
+    - Sitting with you while you work as a study buddy
+    - Support you while you catch up
+    - Helping you reach out for help
+
+You can get an ARC or a Peer Tutor by contacting a professor or Disability Services.
+
+Much of our focus will be on feedback to help you improve rather than on grades that evaluate your performance. As part of our feedback system, if your performance in the course is not satisfactory, you will hear from your instructors, and we will work with you to develop a plan to help you get back on track. That said, we strongly encourage you to ask for help when you need it rather than waiting for the instructors to approach you with concerns.
 
 ## Use of Code From External Sources
 
@@ -158,3 +198,6 @@ This rubric applies to mini-projects and projects. It does not apply to reading 
 * The student did not turn anything in.
 
 Each assignment should be graded on each of these 3 axes. The final assignment grade will be based on a weighted average of each of these 3 grades with weights as follows: functionality 60%, documentation 20%, style 20%.
+
+
+2019 update: Thanks to the Context and Ethics summer team for helpful suggestions to the syllabus
