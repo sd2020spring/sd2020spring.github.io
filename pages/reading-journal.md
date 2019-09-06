@@ -5,6 +5,32 @@ permalink: reading-journal/
 
 {% include toc %}
 
+## Get the Reading Journal
+
+We will be using GitHub to distribute and collect pre-class reading exercises.
+To get started, perform the steps below to setup your personal `ReadingJournal` repository.
+
+1. Click on the invitation link <{{ site.data.github.reading_journal_invite }}>
+2. Click the green button “Accept this assignment”.
+3. Follow the remaining instructions until you get to your repository page. It will looks something like <https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname>, except with your GitHub user id instead of `myname`.
+4. Clone the repository to your computer by typing the following into your Terminal program. Replace `myname` with your GitHub user id.
+
+```bash
+$ git clone https://github.com/{{ site.data.github.organization }}/ReadingJournal-myname.git ReadingJournal
+```
+
+Now you have a copy of the ReadingJournal folder (directory) on your drive. Use the terminal{::comment}, macOS Finder, Windows Explorer,{:/comment} or Ubuntu File Manager to verify that it is present.
+
+Next, you can fire up Jupyter notebook and load the reading journal for day X.
+
+```bash
+$ cd ReadingJournal
+$ jupyter notebook reading-journal-01.ipynb
+```
+
+If all goes well, this should bring up a web-browser with the reading questions.
+
+
 ## Submitting Completed Readings
 
 Once you have completed your reading journal (not just the reading exercises, but also your notes as well as any comments you want to give to us), you can turn in your work by running the following commands. First, make sure you have saved the notebook by clicking "Save and checkpoint" in the browser window. Then, run the following. (Change “reading journal 1” to the day that you have completed.)
