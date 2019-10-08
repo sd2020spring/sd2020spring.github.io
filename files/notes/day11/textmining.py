@@ -5,11 +5,11 @@ Uses a local file cache to avoid repeatedly downloading
 
 >>> moby = Text("http://www.gutenberg.org/files/2701/2701-0.txt") # doctest: +ELLIPSIS
 INFO: 'http://www.gutenberg.org/files/2701/2701-0.txt' found in ...
->>> print(moby.text[27802:27818])
+>>> print(moby.text[28622:28638])
 Call me Ishmael.
 """
 
-# In your code you can try using a database or pickle instead of saving files
+# In your code you can try using a database or pickle instead of saving files.
 # This example does not do any processing or cleaning on the text data
 # (but you should)
 
@@ -39,7 +39,7 @@ class Text:
     """
     Text class holds text-based information downloaded from the web
     It uses local file caching to avoid downloading a given file multiple times,
-    even across multiple runs of the programself.
+    even across multiple runs of the program.
     """
     def __init__(self, url, file_cache=os.path.join(sys.path[0], "cache")):
         """
@@ -96,23 +96,21 @@ class Text:
             self.text = fp.read()
 
 
-def run_example():
+def get_example():
     """
     Return a dictionary with key: book title, value: Text objects for books.
     """
-    import time
-
     urls = { "Pride and Prejudice": "http://www.gutenberg.org/files/1342/1342-0.txt",
              "Moby Dick": "http://www.gutenberg.org/files/2701/2701-0.txt",
              "Iliad": "http://www.gutenberg.org/ebooks/6130.txt.utf-8"
            }
 
-    texts = {}
+    books = {}
     for title, url in urls.items():
         t = Text(url)
-        texts[title] = t
+        books[title] = t
 
-    return texts
+    return books
 
 
 if __name__ == '__main__':
@@ -120,7 +118,18 @@ if __name__ == '__main__':
     #doctest.testmod()
 
     from pprint import pprint   # "Pretty-print" dictionary
-    books = run_example()
+    books = get_example()
     pprint(books)
-    #for title, book in books.items():
-    #    print(book.text[2000:2010])import sys
+
+    ## Example: using text contents of Text instances
+    for title, book in books.items():
+        print("Excerpt from {title}: {txt!r}".format(title=title, txt=book.text[2000:2010]))
+
+    # In the above example we access the .text attribute of the class directly.
+    # Exercise: Try adding a "lines" method to the class that returns a list
+    #           of all the individual lines in the text file (after cleaning
+    #           the text), so that you can use it to write code like:
+    #
+    # example = Text(my_url)
+    # for line in example.lines():
+    #     do_something(line)
