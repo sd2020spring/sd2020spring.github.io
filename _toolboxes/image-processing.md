@@ -94,11 +94,18 @@ that introduced the method if you'd like to learn more.
 In order to load the face detector, you will have to load `haarcascade_frontalface_alt.xml`, an XML file that describes the faces the detector is looking for. You can download the file directly [here](https://raw.githubusercontent.com/Itseez/opencv/master/data/haarcascades/haarcascade_frontalface_alt.xml).
 
 To detect faces, *before you start grabbing frames from the video*, instantiate
-the face detector. Use the filepath of where you put the XML file, the location below would be in your Downloads folder.
+the face detector. Use the filepath of where you put the XML file, for example in your Downloads folder:
 
 ```python
-    face_cascade = cv2.CascadeClassifier('~/Downloads/haarcascade_frontalface_alt.xml')
+    face_cascade = cv2.CascadeClassifier('/home/ben/Downloads/haarcascade_frontalface_alt.xml')
 ```
+
+Or you can put the XML file in the toolbox folder alongside ```face_detect.py```, so you don't need to provide a path:
+
+```python
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
+```
+
 
 After grabbing each frame, run the face detector to get a list of faces in the
 image and then draw a red box around each detected face:
