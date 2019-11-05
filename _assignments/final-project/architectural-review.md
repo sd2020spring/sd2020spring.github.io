@@ -99,11 +99,12 @@ received addressing your key questions. How do you plan to incorporate it
 going forward? What new questions did you generate?
 
 2. **Review process reflection**
-How did the review go? Did you get answers to your key questions? Did you
+How did the session go, and what could you do next time to have an even
+more effective technical review?
+Did you get answers to your key questions? Did you
 provide too much/too little context for your audience? Did you stick closely
 to your planned agenda, or did you discover new things during the discussion
-that made you change your plans? What could you do next time to have an even
-more effective technical review?
+that made you change your plans? 
 
 ## Grading rubric
 
