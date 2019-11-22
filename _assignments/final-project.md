@@ -23,10 +23,10 @@ parts:
   due: 2019-11-09 12:00:00 -04:00
   tag: architectural-review
 - name: Project Website MVP
-  due: 2019-11-22 12:00:00 -04:00
+  due: 2019-12-03 15:10:00 -04:00
   tag: project-website-mvp
 - name: Project Website, feedback addressed
-  due: 2019-12-03 12:00:00 -04:00
+  due: 2019-12-06 12:00:00 -04:00
   tag: project-website-final
 - name: Demo Video
   due: 2019-12-10 20:00:00 -04:00
