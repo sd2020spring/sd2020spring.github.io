@@ -1,12 +1,12 @@
-title: Software Design | Fall 2019
+title: Software Design | Spring 2020
 short_title: Software Design
 description: An introduction to software design.
 timezone: America/New_York
 calendar_url: ""
 future: true
 
-sections: 1
-room_number: AC128
+sections: 2
+room_number: AC326, AC318
 
 yandex_key: 0270fddbef1d3809
 
@@ -30,7 +30,7 @@ collections:
     permalink: /notes/:path
   toolboxes:
     layout: default
-    output: true
+    output: false
     permalink: /toolboxes/:path
 
 defaults:
