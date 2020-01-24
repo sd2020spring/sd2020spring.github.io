@@ -138,7 +138,10 @@ things to note.
 
 If you want to connect to a wired or wireless network during the installation
 process, feel free to do so. To connect to wireless, use the instructions in the
-next section.
+next section. (**Note**: if you have a laptop issued by Olin IT this academic
+year, you will not be able to connect to a wireless network and will not even
+have the option to do so. Follow the appropriate steps in the post-installation
+instructions below.)
 
 You should choose to install Ubuntu alongside Windows Boot Manager when
 prompted. You should also choose to install 3rd Party Software, which includes
@@ -210,6 +213,49 @@ in the settings.
 
 Once you have installed Ubuntu, you will need to make sure that your system is
 up to date.
+
+#### Olin 2019-2020 laptops: update the kernel
+
+If you have a laptop issued from Olin **this year** (i.e., you are a first-year
+student or otherwise received this year's laptop), **your wi-fi will probably
+not work** when you first boot your machine.
+
+To get this to work, you need to update your kernel. Open a Terminal by pressing
+`Ctrl-Alt-T`. Then, type the following (leave out the initial `$`) and press
+`Enter`:
+
+```bash
+$ cd /media/<your username>/Ubuntu\ 18.04.3\ LTS\ amd64
+```
+
+replacing `<your username>` with the username you set during installation. Also,
+after typing the first few characters of "Ubuntu", you should be able to press
+`TAB` and have it autocomplete. This will move you into the folder (also called
+a *directory*) with the correct files.
+
+Check that you are in the correct folder with the following (again leaving
+out `$`):
+
+```bash
+$ ls
+```
+
+This will display a list of files in the current folder. If you see `install.sh`
+and many files starting with `linux-...` then you are in the correct folder. If
+not, try
+
+```bash
+$ cd /media/<your username>/Ubuntu\ 18.04.3\ LTS\ amd641
+```
+
+instead. Once in the correct folder, type
+
+```bash
+$ sudo ./install.sh
+```
+
+This might take a while. Once done, restart your computer. Wireless connections
+should now work.
 
 #### Connect to the Internet
 
