@@ -5,14 +5,14 @@ description: >
   a DNA sequence and outputs snippets of DNA that are likely to be protein-coding
   genes. You will then use your program to find genes in a sequence of DNA from the
   bacterium Salmonella Enterica.
-due: 2019-09-17 13:30:00 -04:00
+due: 2020-02-11 10:30:00 -05:00
 parts:
 - name: Week 1
   tag: week-1
-  due: 2020-02-04 10:30:00 -04:00
+  due: 2020-02-04 10:30:00 -05:00
 - name: Week 2
   tag: week-2
-  due: 2020-02-11 10:30:00 -04:00
+  due: 2020-02-11 10:30:00 -05:00
 ---
 
 {% include toc %}
