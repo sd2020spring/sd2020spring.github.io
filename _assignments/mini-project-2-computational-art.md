@@ -537,7 +537,7 @@ format).
 
 We will be creating an art gallery of examples from the class.
 To participate,
-submit your art files (either images or movies) by email to Ben along with a brief file
+submit your art files (either images or movies) by email to the instructors along with a brief file
 called `ARTIST_STATEMENT.txt` that contains:
 
 * Your name (if not anonymous)
