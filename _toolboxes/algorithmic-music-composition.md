@@ -164,6 +164,10 @@ _Add a backing track_: **Sonic Pi** can mix together various audio streams.
 In order to add a backing track to your solo, add this to the beginning of
 your program:
 
+You will need to download the backing.wav file from the "files" section of the course Canvas page.
+Once downloaded, move the file to the "samples" directory of your toolbox-algorithmicMusic repo.
+You can choose to use any .wav file that you wish, but feel free to start with the one we supply using the code below.
+
 ```python
 BACKING_TRACK = os.path.join(SAMPLES_DIR, "backing.wav")
 sample(BACKING_TRACK, amp=2)
@@ -188,6 +192,6 @@ scale. It may sound cool for the lick to start on these notes.
 
 To complete the toolbox exercise, you should complete all of the steps up to
 **Make it Cooler**, and then at least one of the extensions suggested in the
-**Make it Cooler** section. 
+**Make it Cooler** section.
 After you push your work to GitHub you should schedule a quick meeting to play your sweet
 tunes for a NINJA.
