@@ -4,3 +4,4 @@ _site
 .sass-cache
 .ruby-version
 images/.DS_Store
+files/notes/.DS_Store
