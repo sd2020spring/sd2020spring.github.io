@@ -83,26 +83,6 @@ We used dot notation to gain access to attributes (values of a variable in a par
 A function that is created to be run from within a class is called a method.
 We are looking to help assess whether a particular student will be a good partner on a class project, and we believe that students who bring unique perspectives to partnerships are best. We will write a method called different_perspective(). This method will look at a potential partner and return true if that person does not have the exact same experience as the student does OR the two students are not the same incoming class. Notice that we add an `experience` attribute.
 
-```
-class CollegeStudent:
-    # "initializes" each instance of a class, storing instance attributes
-    def __init__(self, name, gradyear, experience):
-        self.name = name
-        self.gradyear = gradyear
-        self.experience = experience
-
-
-    # compares the experience of two students
-    def different_perspective(self, potential_partner):
-        if self.experience == potential_partner.experience:
-            return False
-        elif self.gradyear == potential_partner.gradyear:
-            return False
-        else:
-            return True
-```
-
-
 
 ```python
 class CollegeStudent:
@@ -137,35 +117,6 @@ In the case of Software Design, there are at least three different types of stud
 
 
 We will expand what the CollegeStudent class does.
-
-```
-class CollegeStudent:
-    #Class Attribute    
-    college = 'Olin'
-
-    # "initializes" each instance of a class, storing instance attributes
-    def __init__(self, name, gradyear, experience, major, overdue_assignments):
-        self.name = name
-        self.gradyear = gradyear
-        self.experience = experience
-        self.major = major
-        self.overdue_assignments = overdue_assignments
-
-
-    # compares the experience of two students
-    def different_perspective(self, potential_partner):
-        if self.experience == potential_partner.experience:
-            return False
-        elif self.gradyear == potential_partner.gradyear:
-            return False
-        else:
-            return True
-
-
-    # prints how on top of their work the student is
-    def on_top_of_it(self):
-        return "{} has yet to turn in {} assignments".format(self.name, self.overdue_assignments
-```
 
 
 ```python
@@ -221,43 +172,7 @@ class BabsonSoftDesStudent(CollegeStudent):
 ```
 
 
-Additionally, children classes can override propoerties of the paren - either methods or attributes.
-
-```
-class OlinSoftDesStudent(CollegeStudent):
-    def course_counts_toward(self):
-        if major == 'computing':
-            return 'major credits'
-        else:
-            return 'elective credits'
-
-    def on_top_of_it(self):
-        if self.overdue_assignments > 5:
-            return 'email a warning to student_life_concerns@olin.edu'
-        else:
-            return 'pretty on top of it'
-
-
-class BabsonSoftDesStudent(CollegeStudent):
-    def course_counts_toward(self):
-        return 'Olin certificate or general credit'
-
-
-    def on_top_of_it(self):
-        if self.overdue_assignments > 5:
-            return 'email a warning to cross_reg_adviser@babson.edu'
-        else:
-            return 'pretty on top of it'
-```
-
-Another subclass (child) that would have a need to override a method of this particular parent class is SoftDesCourseAssistant.
-
-```
-class SoftDesCourseAssistant(CollegeStudent):
-
-    def on_top_of_it(self):
-        return "{} has yet to grade {} student assignments".format(self.name, self.overdue_assignments)
-```
+Additionally, children classes can override properties of the parent - either methods or attributes.
 
 
 ```python
@@ -328,6 +243,7 @@ print(dezzie.on_top_of_it())
 print(sophie.on_top_of_it())
 
 ```
+## Questions
 
 To check what you have explored with classes and inheritance, think about what these terms mean to you, and how you think they relate to each other.
 
