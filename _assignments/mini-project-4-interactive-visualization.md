@@ -4,7 +4,7 @@ description: >
   The big idea of this project will be to move from static programs (ones
   that are run, do some computations, and spit out a result) to interactive programs
   (ones that allow the user to perform actions that change the state of the program).
-due: 2020-03-31 10:50:00 -04:00
+due: 2020-03-30 17:00:00 -04:00
 parts:
 - name: Project Proposal
   due: 2020-03-11 09:00:00 -04:00
@@ -19,7 +19,24 @@ parts:
 
 {% include toc %}
 
-## Introduction
+## Adjustments that override everything that follows
+
+Mini-Project 4 has been converted into a "micro-project-4" focused on helping you design your software architecture according to the MVC framework. Working with your same MP4 partner, you only need to write the "structure" of your classes and functions and turn that in; none of the functions need to be implemented. Our feedback will then be a critique of how you split up the components of your system, how you named functions/classes, etc. This will be due at 5PM Eastern Time on Monday, 3/30
+
+After this adjusted "micro-project-4" project is submitted, you have two options: Breadth or Depth.
+Breadth is an opportunity for you to explore a greater number of topics on your own, or potentially revisit previous topics in more detail.
+Depth is an opportunity to continue a micro-project 4 idea (either your own or someone else's) and to practice a more detailed software engineering process.
+
+* Option 1 (Breadth) is an opportunity for you to explore a greater number of topics on your own, or potentially revisit topics in more detail.
+We will provide you a mix of worksheets, which are more than reading journals and less than toolboxes. We'll also leave existing toolboxes for you to complete.
+You should do five in total, with at least one worksheet and toolbox.
+This process is designed to give you exposure to more topics in programming, including ones that we wouldn't ordinarily have time to cover as a class, and/or to deepen your understanding of topics that we have already covered.
+* Option 2 (Depth) is an opportunity to continue a micro-project idea (either yours or someone else's) and to practice a more detailed software engineering process.
+You can form a new team (if you want to), consisting of 2-4 people. To make it easier to work with people in closer time zones, the choice of these partners is up to you.
+As a group, choose a micro-project-4 that at least one of you worked on. You will build on the MVC framework that was submitted and implement it as your final project. The Final Project description page will detail the logistics of the project, the type of interactive programs will be based on what is stated in the sections below.
+
+
+## Original Introduction
 
 In the first three mini-projects you have written Python programs that do a
 wide variety of things. You have written code to analyze data (mini-projects 1
@@ -303,9 +320,11 @@ Its purpose is to allow us to help shape your project in useful directions - and
 **Note: You can/should start your project before instructors have seen your proposals.**
 
 ### Mid-Project Check-in
-
+<!--
 {% assign part = page.parts[1] %}
 _Due on or before: {{ part.due | date: site.part_due_date_format }}_
+-->
+NOTE That this is not a part of the adjusted Micro-Project-4. You can therefore ignore this section.
 
 
 We are requiring an online mid-project check-in with course staff for this project.
@@ -329,9 +348,13 @@ This check-in must be submitted by {{ part.due | date: site.part_due_date_format
 
 
 ### Project Write-up and Reflection
-
+<!--
 {% assign part = page.parts[2] %}
 _Due: {{ part.due | date: site.part_due_date_format }}_
+-->
+NOTE That this is not a part of the adjusted Micro-Project-4. You can therefore ignore this section.
+
+
 
 Please prepare a short document (~1 page not including figures) with the
 following sections:
@@ -371,6 +394,10 @@ it actually happen? Were there any issues that arose while working together,
 and how did you address them? What would you do differently next time?
 
 ### Turning in your assignment
+
+NOTE That what is written below is not a part of the adjusted Micro-Project-4. You can therefore ignore the details of this section. Instead, you will submit your classes and functions that will make up the proposed Model-View-Controller framework for your topic. No code will be executed.
+
+
 
 Your code should submitted as either (a) Python file (or files) that can be executed by running *e.g.* `python qbert.py`, or (b) a Jupyter notebook.
 
