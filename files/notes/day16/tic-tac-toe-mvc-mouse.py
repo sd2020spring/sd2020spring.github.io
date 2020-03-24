@@ -5,7 +5,7 @@ design pattern to the creation of a simple game.
 
 This script represents a start to a tic-tac-toe game.
 
-@author: amonmillner
+@author: SoftDes Teaching Team
 """
 
 import pygame
@@ -59,6 +59,9 @@ class GameModel:
         self.width = size[0]
         self.height = size[1]
 
+    def mark(self, x, y):
+        self.xs[x][y] = 1
+
     def __str__(self):
         return str(self.xs) #makes the state of the model show up as a string
 
@@ -70,31 +73,31 @@ class PyGameKeyboardController:
 
     def handle_event(self,event):
         """
-        This method takes QWE ASD ZXC keys to place x's in the grid.
-        The code could be refactored, but is left long for clarity at this point.
+        Takes QWE ASD ZXC keys to place x's in the grid.
+
         There are multiple ways to update our model based on key strokes.
-        The way below, puts a 1 in the grid using the "|" OR method.
+        The way below, puts a 1 in the grid using a method of the model instance.
         """
         if event.type != KEYDOWN:
             return
         if event.key == pygame.K_q:
-            self.model.xs[0][0] = self.model.xs[0][0] | 1
+            self.model.mark(0,0)
         if event.key == pygame.K_w:
-            self.model.xs[0][1] = self.model.xs[0][1] | 1
+            self.model.mark(0,1)
         if event.key == pygame.K_e:
-            self.model.xs[0][2] = self.model.xs[0][2] | 1
+            self.model.mark(0,2)
         if event.key == pygame.K_a:
-            self.model.xs[1][0] = self.model.xs[1][0] | 1
+            self.model.mark(1,0)
         if event.key == pygame.K_s:
-            self.model.xs[1][1] = self.model.xs[1][1] | 1
+            self.model.mark(1,1)
         if event.key == pygame.K_d:
-            self.model.xs[1][2] = self.model.xs[1][2] | 1
+            self.model.mark(1,2)
         if event.key == pygame.K_z:
-            self.model.xs[2][0] = self.model.xs[2][0] | 1
+            self.model.mark(2,0)
         if event.key == pygame.K_x:
-            self.model.xs[2][1] = self.model.xs[2][1] | 1
+            self.model.mark(2,1)
         if event.key == pygame.K_c:
-            self.model.xs[2][2] = self.model.xs[2][2] | 1
+            self.model.mark(2,2)
 
 
 class PyGameMouseController:
@@ -104,31 +107,32 @@ class PyGameMouseController:
         self.model = model
 
     def handle_event(self,event):
-        """ Handle the mouse event so that X/O marks can be placed each click
-        The code could be refactored, but is left long for clarity at this point.
-        There are multiple ways to update our model based on mouse click X,Y coordinates.
-        The way below, puts a 1 in the grid using the "|" OR method.
+        """
+        Handle the mouse event so that X/O marks can be placed on each click.
+
+        There are multiple ways to update our model based on mouse click
+        X,Y coordinates. Below is just one of many.
         """
         if event.type == MOUSEBUTTONDOWN:
             clicklocation = event.pos
             if 0 < clicklocation[0] < 100 and 0 < clicklocation[1] < 100:
-                self.model.xs[0][0] = self.model.xs[0][0] | 1
+                self.model.mark(0,0)
             if 100 < clicklocation[0] < 200 and 0 < clicklocation[1] < 100:
-                self.model.xs[0][1] = self.model.xs[0][1] | 1
+                self.model.mark(0,1)
             if 200 < clicklocation[0] < 300 and 0 < clicklocation[1] < 100:
-                self.model.xs[0][2] = self.model.xs[0][2] | 1
+                self.model.mark(0,2)
             if 0 < clicklocation[0] < 100 and 100 < clicklocation[1] < 200:
-                self.model.xs[1][0] = self.model.xs[1][0] | 1
+                self.model.mark(1,0)
             if 100 < clicklocation[0] < 200 and 100 < clicklocation[1] < 200:
-                self.model.xs[1][1] = self.model.xs[1][1] | 1
+                self.model.mark(1,1)
             if 200 < clicklocation[0] < 300 and 100 < clicklocation[1] < 200:
-                self.model.xs[1][2] = self.model.xs[1][2] | 1
+                self.model.mark(1,2)
             if 0 < clicklocation[0] < 100 and 200 < clicklocation[1] < 300:
-                self.model.xs[2][0] = self.model.xs[2][0] | 1
+                self.model.mark(2,0)
             if 100 < clicklocation[0] < 200 and 200 < clicklocation[1] < 300:
-                self.model.xs[2][1] = self.model.xs[2][1] | 1
+                self.model.mark(2,1)
             if 200 < clicklocation[0] < 300 and 200 < clicklocation[1] < 300:
-                self.model.xs[2][2] = self.model.xs[2][2] | 1
+                self.model.mark(2,2)
 
 
 """
