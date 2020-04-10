@@ -95,7 +95,7 @@ classification accuracy on the testing set.
 
 ```python
 from sklearn.datasets import *
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
 data = load_digits()
