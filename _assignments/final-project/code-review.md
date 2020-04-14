@@ -1,3 +1,9 @@
+---
+title: Code Review
+parent: final-project
+---
+
+{% include toc %}
 
 For some motivation, please check out this quote:
 
