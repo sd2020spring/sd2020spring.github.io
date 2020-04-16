@@ -10,31 +10,33 @@ proposal_survey_url:
 spreadsheet_url:
 parts:
 - name: Project Proposal
-  due:
+  due: 2020-04-03 17:00:00 -04:00
   tag: project-proposal
-- name: AR Preparation Document
-  due:
-  tag: architectural-review
+- name: AR Session
+  due: 2020-04-10 10:50:00 -04:00
+  tag: architectural-review-part1
 - name: AR Reflection Document
-  due:
+  due: 2020-04-16 10:00:00 -04:00
   tag: architectural-review
 - name: Project Website MVP
-  due:
+  due: 2020-05-01 10:00:00 -04:00
   tag: project-website-mvp
 - name: Project Website, feedback addressed
-  due:
+  due: 2020-05-07 22:00:00 -04:00
   tag: project-website-final
 - name: Code Submission
   due: 2020-05-07 12:00:00 -04:00
   tag: code-submission
+- name: Final Class Session
+  due: 2020-05-08 10:50:00 -04:00
+  tag: final-class
 type: index
 proposal_part: 0
 arch_review_part: 1
-website_part: 2
-website_revision: 3
+website_part: 3
+website_revision: 4
 code_part: 5
-expo_part: 5
-final_deliverables_part: 5
+final_part: 6
 ---
 
 {% include toc %}
@@ -42,8 +44,7 @@ final_deliverables_part: 5
 ## Overview
 
 This description applies to students who are pursuing the "Depth" option for completing the SoftDes course via virtual instruction (as a result of unusual circumstances introduced by the COVID-19 pandemic). From now until the end of the semester you will be working with a team of
-students on a group software project. The theme of the project will follow the MP4 guidelines of interactive programming. The project will culminate during the
-Final Event period for this class, with a virtual website walkthrough.
+students on a group software project. The theme of the project will follow the MP4 guidelines of interactive programming. The project will culminate during the Final Event period for this class, with a virtual website walkthrough.
 
 ## Project Topic
 
@@ -97,7 +98,7 @@ You can assume that this proposal is for information sharing and not seeking app
 
 ### Architectural Review
 
-_First Review Date: {{ page.parts[page.arch_review_part].due | date: '%A, %B %-d' }}_
+_Live AR, due {{ page.parts[page.arch_review_part].due | date: '%-I:%M %p %A, %B %-d' }}._
 
 **The Architectural reviews are worth 15% of the project grade ([rubric]({% link _assignments/final-project/architectural-review.md %})).**
 
@@ -113,9 +114,10 @@ See the [Architectural Review]({% link _assignments/final-project/architectural-
 ### Project Website
 
 {% assign part = page.parts[page.website_part] %}
-_Due: {{ part.due | date: '%-I:%M %p %A, %B %-d' }}._
 
-_Final revision, that incorporates instructor feedback, due {{ page.parts[page.website_revision].due | date: '%-I:%M %p %A, %B %-d' }}._
+_First Draft, due {{ page.parts[page.website_part].due | date: '%-I:%M %p %A, %B %-d' }}._
+
+_Final Draft, due {{ page.parts[page.website_revision].due | date: '%-I:%M %p %A, %B %-d' }}._
 
 **The final website is worth 25% of the project grade**
 
@@ -183,6 +185,7 @@ project website from your GitHub repository.
 
 **Submission mechanics**: Your project's GitHub repo page should link to your web site. This means either the README, or the Website that is optionally displayed in the upper right corner of your GitHub repo page, should contain this link.
 
+<!--
 ### Demo Session Poster
 
 {% assign part = page.parts[page.video_part] %}
@@ -194,14 +197,14 @@ Each team will also generate an informational poster about your project followin
 
 This semester, we are not asking teams to create videos - which would have been short (1-2 minute) pitches for your project - demonstrating its functionality.
 They typically included the project's goal, what the software does, how to use it, why a team made it, and what a team would do if they had more time. Any team can make a video and add it to their webpage, however this is completely optional.
-
+-->
 
 ### Code submission
 
 {% assign part = page.parts[page.code_part] %}
 _Due: {{ part.due | date: '%A, %B %-d' }}_
 
-**Project code is worth 40% of the project grade (see code rubric on the [course policy page]({% link pages/policies.md %}))**
+**Project code is worth 50% of the project grade (see code rubric on the [course policy page]({% link pages/policies.md %}))**
 
 Project code must be submitted via GitHub by {{ part.due | date: '%B %-d' }}. You must include a
 README describing how to run your code, including any required dependencies
@@ -225,11 +228,9 @@ about this, just ask.
 
 **Submission mechanics**: Push your work to GitHub, and verify that all your final changes are reflected on github.com. Submit a link to your work on Canvas.
 
-### Final Demo / Presentation Session
+### Final Class Zoom Session
 
-{% assign part = page.parts[page.expo_part] %}
+{% assign part = page.parts[page.final_part] %}
 _Date: {% if part.due %}{{ part.due | date: '%A, %b %-d, %-H:%M %p' }}{% else %}TBD{% endif %}_
 
-During the Final Event, {% if site.sections > 1 %} all studios of {% endif %}
-SoftDes will be invited to the zoom room {{ site.final_room_number }}
-and we will allow each team to talk for a minute or two about their posters. Other members of the Olin community may join virtually.
+We will have some time set aside during the last class period to feature Depth projects, if any teams want to demo what they have submitted.
